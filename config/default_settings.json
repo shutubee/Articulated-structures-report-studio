@@ -1,0 +1,6 @@
+{
+  "unit_system": "kN-m",
+  "model_dimension": "2D",
+  "explanation_level": "engineering",
+  "safety_label": "Educational / Preliminary Structural Modelling Prototype"
+}
