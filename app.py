@@ -1,6 +1,4 @@
 ## `app.py`
-
-```python
 import json
 import pandas as pd
 import streamlit as st
