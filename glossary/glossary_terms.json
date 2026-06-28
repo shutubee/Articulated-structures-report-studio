@@ -1,0 +1,4515 @@
+{
+  "metadata": {
+    "title": "Articulated Structures Glossary Terms",
+    "source_file": "Articulated_structures.pdf",
+    "schema_version": "1.0",
+    "generated_for": "glossary/glossary_terms.json",
+    "page_ranges_used": {
+      "core_framework": "8-15",
+      "alphabetic_glossary": "17-91"
+    },
+    "alphabetic_glossary_occurrences_extracted": 304,
+    "alphabetic_glossary_unique_terms": 297,
+    "core_framework_occurrences_extracted": 25,
+    "core_framework_unique_terms_added": 8,
+    "core_framework_terms_also_present_in_alphabetic_glossary": [
+      "Axial Force",
+      "Bending Moment",
+      "Compatibility",
+      "Equilibrium",
+      "Joint",
+      "Load Path",
+      "Mechanism",
+      "Reaction",
+      "Release",
+      "Rigid Body Motion",
+      "Rotational Degree of Freedom",
+      "Shear Force",
+      "Stability",
+      "Static Determinacy",
+      "Static Indeterminacy",
+      "Torsion",
+      "Translational Degree of Freedom"
+    ],
+    "total_unique_terms": 305,
+    "fields": [
+      "id",
+      "term",
+      "slug",
+      "letter",
+      "source_section",
+      "page",
+      "source_pages",
+      "definition",
+      "engineering_relevance",
+      "app_solver_relevance"
+    ],
+    "notes": [
+      "Alphabetic glossary entries were deduplicated by term slug.",
+      "When duplicate alphabetic entries existed, the most complete/longest entry was selected as primary and alternate entries were preserved under alternate_entries.",
+      "Core-framework definitions not present in the A-Z glossary were added so the JSON covers the whole glossary foundation."
+    ]
+  },
+  "terms": [
+    {
+      "term": "Actuator",
+      "slug": "actuator",
+      "letter": "A",
+      "source_section": "alphabetic_glossary",
+      "page": 17,
+      "source_pages": [
+        17
+      ],
+      "definition": "A device that produces controlled movement, force, or rotation in a mechanical or structural system.",
+      "engineering_relevance": "Actuators are used in deployable roofs, movable bridges, robotic arms, adaptive facades, cranes, and kinetic structures.",
+      "app_solver_relevance": "The app can treat an actuator as a prescribed displacement, prescribed rotation, applied force, or controlled motion input.",
+      "id": 1
+    },
+    {
+      "term": "Adaptive Structure",
+      "slug": "adaptive-structure",
+      "letter": "A",
+      "source_section": "alphabetic_glossary",
+      "page": 17,
+      "source_pages": [
+        17
+      ],
+      "definition": "A structure capable of changing shape, stiffness, position, or response according to loading, environment, or control input.",
+      "engineering_relevance": "Adaptive structures combine structural mechanics with sensing, actuation, and control.",
+      "app_solver_relevance": "The app can classify adaptive structures separately from passive articulated systems.",
+      "id": 2
+    },
+    {
+      "term": "Allowable Movement",
+      "slug": "allowable-movement",
+      "letter": "A",
+      "source_section": "alphabetic_glossary",
+      "page": 17,
+      "source_pages": [
+        17
+      ],
+      "definition": "The maximum permitted displacement, rotation, sliding, uplift, or deformation under service or design conditions.",
+      "engineering_relevance": "Bearings, expansion joints, hinges, and sliding joints are designed with movement capacity limits.",
+      "app_solver_relevance": "The app should compare calculated movement with allowable movement and generate warnings when limits are exceeded.",
+      "id": 3
+    },
+    {
+      "term": "Anchor Bolt",
+      "slug": "anchor-bolt",
+      "letter": "A",
+      "source_section": "alphabetic_glossary",
+      "page": 17,
+      "source_pages": [
+        17
+      ],
+      "definition": "A bolt used to connect a structural member, base plate, bearing, or support assembly to concrete or foundation material.",
+      "engineering_relevance": "Anchor bolts may transfer tension, shear, moment, or combined loading depending on base connection behaviour.",
+      "app_solver_relevance": "The app can include anchor bolts in connection detailing and support restraint checks.",
+      "id": 4
+    },
+    {
+      "term": "Angular Displacement",
+      "slug": "angular-displacement",
+      "letter": "A",
+      "source_section": "alphabetic_glossary",
+      "page": 18,
+      "source_pages": [
+        18
+      ],
+      "definition": "The rotational movement of a body, member, or joint.",
+      "engineering_relevance": "Angular displacement is central to hinges, semi-rigid joints, bearings, rocking systems, and deployable mechanisms.",
+      "app_solver_relevance": "The app should output angular displacement in radians or degrees.",
+      "id": 5
+    },
+    {
+      "term": "Arch",
+      "slug": "arch",
+      "letter": "A",
+      "source_section": "alphabetic_glossary",
+      "page": 18,
+      "source_pages": [
+        18
+      ],
+      "definition": "A curved structural form that primarily transfers load through compression and horizontal thrust.",
+      "engineering_relevance": "Articulated arches may be two-hinged, three-hinged, tied, fixed, or bearing-supported.",
+      "app_solver_relevance": "The app should include arch templates with thrust, reaction, bending, and hinge-force outputs.",
+      "id": 6
+    },
+    {
+      "term": "Arch Rib",
+      "slug": "arch-rib",
+      "letter": "A",
+      "source_section": "alphabetic_glossary",
+      "page": 18,
+      "source_pages": [
+        18
+      ],
+      "definition": "The main curved compression member of an arch.",
+      "engineering_relevance": "The arch rib carries axial compression, bending, and shear depending on shape, loading, and support conditions.",
+      "app_solver_relevance": "The app should model the arch rib as a curved member or segmented frame approximation.",
+      "id": 7
+    },
+    {
+      "term": "Articulated Beam",
+      "slug": "articulated-beam",
+      "letter": "A",
+      "source_section": "alphabetic_glossary",
+      "page": 18,
+      "source_pages": [
+        18
+      ],
+      "definition": "A beam with one or more hinges, releases, or bearing-supported segments that alter moment continuity.",
+      "engineering_relevance": "Gerber beams and suspended-span systems are common examples.",
+      "app_solver_relevance": "The app should support internal hinge placement and automatically split bending moment diagrams at hinge points.",
+      "id": 8
+    },
+    {
+      "term": "Articulated Frame",
+      "slug": "articulated-frame",
+      "letter": "A",
+      "source_section": "alphabetic_glossary",
+      "page": 18,
+      "source_pages": [
+        18
+      ],
+      "definition": "A frame containing pins, hinges, semi-rigid joints, or releases that modify the usual rigid-frame behaviour.",
+      "engineering_relevance": "Articulated frames are used in portals, cranes, temporary works, roof structures, and mechanical support systems.",
+      "app_solver_relevance": "The app should allow mixed rigid and released joints in the same frame model.",
+      "id": 9
+    },
+    {
+      "term": "Articulated Joint",
+      "slug": "articulated-joint",
+      "letter": "A",
+      "source_section": "alphabetic_glossary",
+      "page": 18,
+      "source_pages": [
+        18
+      ],
+      "definition": "A joint that permits selected relative movement while still transferring selected forces.",
+      "engineering_relevance": "The joint may rotate, slide, rock, or twist depending on its detailing.",
+      "app_solver_relevance": "The app should define articulated joints by their released and restrained degrees of freedom.",
+      "id": 10
+    },
+    {
+      "term": "Articulated Structure",
+      "slug": "articulated-structure",
+      "letter": "A",
+      "source_section": "core_framework_only",
+      "page": 8,
+      "source_pages": [
+        8
+      ],
+      "definition": "A structure made of members connected by joints, hinges, pins, bearings, sliders, links, or semi-rigid connections that allow controlled relative motion or controlled release of force/moment transfer.",
+      "engineering_relevance": "It appears in trusses, cranes, bridges, deployable roofs, robotic arms, foldable structures, three-hinged arches, movable frames, suspension systems, and bearing-supported bridge decks.",
+      "app_solver_relevance": "In the app, this is the parent system category. Every model must define members, nodes, joints, degrees of freedom, restraints, releases, loads, and stability checks.",
+      "id": 11
+    },
+    {
+      "term": "Articulation",
+      "slug": "articulation",
+      "letter": "A",
+      "source_section": "core_framework_only",
+      "page": 8,
+      "source_pages": [
+        8,
+        9
+      ],
+      "definition": "The deliberate provision of movement or release at a connection, support, or internal point of a structure.",
+      "engineering_relevance": "Articulation reduces unwanted restraint forces, allows thermal movement, simplifies force flow, accommodates rotation, and can make a structure statically determinate.",
+      "app_solver_relevance": "In the app, articulation is recorded as a joint property: rotation release, sliding release, axial release, shear release, torsional release, or semi-rigid stiffness. CHAPTER 2. ARTICULATED STRUCTURES: CORE FRAMEWORK",
+      "id": 12
+    },
+    {
+      "term": "Axial Deformation",
+      "slug": "axial-deformation",
+      "letter": "A",
+      "source_section": "alphabetic_glossary",
+      "page": 19,
+      "source_pages": [
+        19
+      ],
+      "definition": "Change in member length caused by axial tension or compression.",
+      "engineering_relevance": "Axial deformation can control truss displacement, cable extension, tie elongation, and strut shortening.",
+      "app_solver_relevance": "The app should compute axial deformation using member force and axial stiffness.",
+      "id": 13
+    },
+    {
+      "term": "Axial Force",
+      "slug": "axial-force",
+      "letter": "A",
+      "source_section": "alphabetic_glossary",
+      "page": 19,
+      "source_pages": [
+        19
+      ],
+      "definition": "Internal force acting along the length of a member.",
+      "engineering_relevance": "Positive axial force is often treated as tension and negative axial force as compression, depending on sign convention.",
+      "app_solver_relevance": "The app should display axial force diagrams and member tension/compression classification.",
+      "also_defined_in_core_framework_pages": [
+        12,
+        13
+      ],
+      "id": 14
+    },
+    {
+      "term": "Axial Release",
+      "slug": "axial-release",
+      "letter": "A",
+      "source_section": "alphabetic_glossary",
+      "page": 19,
+      "source_pages": [
+        19
+      ],
+      "definition": "A release that prevents axial force transfer across a member end, joint, or connection.",
+      "engineering_relevance": "Axial releases are less common than moment releases and must be used carefully because they can destabilize a model.",
+      "app_solver_relevance": "The app should warn users when axial releases create disconnected or unstable systems.",
+      "id": 15
+    },
+    {
+      "term": "Ball-and-Socket Joint",
+      "slug": "ball-and-socket-joint",
+      "letter": "B",
+      "source_section": "alphabetic_glossary",
+      "page": 20,
+      "source_pages": [
+        20
+      ],
+      "definition": "A joint that allows rotation about multiple axes while transferring force through a common center.",
+      "engineering_relevance": "It is the mechanical equivalent of a spherical joint and appears in spatial linkages and some bearing assemblies.",
+      "app_solver_relevance": "The app can model it as a joint with rotational freedoms and translational restraints.",
+      "id": 16
+    },
+    {
+      "term": "Base Isolation",
+      "slug": "base-isolation",
+      "letter": "B",
+      "source_section": "alphabetic_glossary",
+      "page": 20,
+      "source_pages": [
+        20
+      ],
+      "definition": "A seismic protection strategy where the structure is supported on devices that reduce transmission of ground acceleration.",
+      "engineering_relevance": "Base isolators allow controlled lateral displacement while supporting vertical load.",
+      "app_solver_relevance": "The app should model isolators as lateral springs, dampers, or nonlinear bearing elements.",
+      "id": 17
+    },
+    {
+      "term": "Bearing",
+      "slug": "bearing",
+      "letter": "B",
+      "source_section": "alphabetic_glossary",
+      "page": 20,
+      "source_pages": [
+        20
+      ],
+      "definition": "A component placed between a superstructure and substructure to transfer load while permitting selected movement or rotation.",
+      "engineering_relevance": "Bearings are critical in bridges, industrial structures, equipment supports, and long-span roofs.",
+      "app_solver_relevance": "The app should include bearing type, movement direction, rotation capacity, vertical load capacity, and lateral restraint.",
+      "id": 18
+    },
+    {
+      "term": "Bearing Seizure",
+      "slug": "bearing-seizure",
+      "letter": "B",
+      "source_section": "alphabetic_glossary",
+      "page": 20,
+      "source_pages": [
+        20
+      ],
+      "definition": "A failure condition where a bearing loses its intended movement capacity due to corrosion, debris, damage, misalignment, or lock-up.",
+      "engineering_relevance": "Seized bearings can create unintended restraint forces and cracking in bridge decks or supports.",
+      "app_solver_relevance": "The app should include bearing seizure as a reality-check warning in inspection mode.",
+      "id": 19
+    },
+    {
+      "term": "Bending Moment",
+      "slug": "bending-moment",
+      "letter": "B",
+      "source_section": "alphabetic_glossary",
+      "page": 21,
+      "source_pages": [
+        21
+      ],
+      "definition": "Internal moment that causes curvature of a member.",
+      "engineering_relevance": "In articulated systems, moment may be intentionally released at hinges and pins.",
+      "app_solver_relevance": "The app should show zero moment at ideal hinges and reduced moment at semi-rigid joints.",
+      "also_defined_in_core_framework_pages": [
+        13
+      ],
+      "id": 20
+    },
+    {
+      "term": "Bending Moment Diagram",
+      "slug": "bending-moment-diagram",
+      "letter": "B",
+      "source_section": "alphabetic_glossary",
+      "page": 21,
+      "source_pages": [
+        21
+      ],
+      "definition": "A diagram showing how bending moment varies along the length of a member.",
+      "engineering_relevance": "Moment diagrams reveal whether a structure is bending-dominant, axial-dominant, or release-controlled.",
+      "app_solver_relevance": "The app should generate BMD outputs for beams, frames, arches, and articulated members.",
+      "id": 21
+    },
+    {
+      "term": "Boundary Condition",
+      "slug": "boundary-condition",
+      "letter": "B",
+      "source_section": "alphabetic_glossary",
+      "page": 21,
+      "source_pages": [
+        21
+      ],
+      "definition": "A mathematical statement of how a support, joint, or edge restrains movement or force.",
+      "engineering_relevance": "Boundary conditions determine reactions, displacements, stability, and internal force distribution.",
+      "app_solver_relevance": "The app should translate user-selected supports into solver boundary conditions.",
+      "id": 22
+    },
+    {
+      "term": "Brace",
+      "slug": "brace",
+      "letter": "B",
+      "source_section": "alphabetic_glossary",
+      "page": 21,
+      "source_pages": [
+        21
+      ],
+      "definition": "A member added to resist lateral movement or stabilize a frame, truss, or mechanism.",
+      "engineering_relevance": "Braces often carry axial tension or compression and prevent sway or collapse mechanisms.",
+      "app_solver_relevance": "The app should identify whether braces stabilize the structure or are themselves compression-buckling risks.",
+      "id": 23
+    },
+    {
+      "term": "Bridge Bearing",
+      "slug": "bridge-bearing",
+      "letter": "B",
+      "source_section": "alphabetic_glossary",
+      "page": 21,
+      "source_pages": [
+        21
+      ],
+      "definition": "A bearing used in bridges to transfer vertical loads and accommodate rotation, expansion, contraction, creep, shrinkage, and sometimes seismic movement.",
+      "engineering_relevance": "Bridge bearings may be fixed, guided, free-sliding, elastomeric, pot, spherical, or isolation bearings.",
+      "app_solver_relevance": "The app should include a bridge-bearing module for load transfer, movement allowance, and warning checks.",
+      "id": 24
+    },
+    {
+      "term": "Buckling",
+      "slug": "buckling",
+      "letter": "B",
+      "source_section": "alphabetic_glossary",
+      "page": 21,
+      "source_pages": [
+        21,
+        22
+      ],
+      "definition": "Instability of a compression member or system under axial load or combined loading.",
+      "engineering_relevance": "Articulated systems often rely on slender struts, ties, and braces; compression members require buckling checks.",
+      "app_solver_relevance": "The app should flag compression members and compute preliminary slenderness or Euler buckling warnings.",
+      "id": 25
+    },
+    {
+      "term": "Cable",
+      "slug": "cable",
+      "letter": "C",
+      "source_section": "alphabetic_glossary",
+      "page": 23,
+      "source_pages": [
+        23
+      ],
+      "definition": "A flexible tension-only member that carries load through axial tension and cannot resist compression or bending in the ideal model.",
+      "engineering_relevance": "Cables appear in suspension bridges, stayed roofs, cranes, hangers, nets, and deployable structures.",
+      "app_solver_relevance": "The app should treat cables as tension-only elements and warn when compression appears.",
+      "id": 26
+    },
+    {
+      "term": "Cable Sag",
+      "slug": "cable-sag",
+      "letter": "C",
+      "source_section": "alphabetic_glossary",
+      "page": 23,
+      "source_pages": [
+        23
+      ],
+      "definition": "The vertical deviation of a cable from a straight chord under self-weight or applied load.",
+      "engineering_relevance": "Sag affects cable tension, horizontal thrust, deflection, and geometry.",
+      "app_solver_relevance": "The app should support sag estimation or catenary/parabolic approximation for cable systems.",
+      "id": 27
+    },
+    {
+      "term": "Catenary",
+      "slug": "catenary",
+      "letter": "C",
+      "source_section": "alphabetic_glossary",
+      "page": 23,
+      "source_pages": [
+        23
+      ],
+      "definition": "The natural curve formed by a flexible cable under its own weight.",
+      "engineering_relevance": "The catenary is compression-arch logic reversed: a hanging cable in tension can define an efficient arch shape in compression.",
+      "app_solver_relevance": "The app can use catenary logic for cable and funicular-form explanation.",
+      "id": 28
+    },
+    {
+      "term": "Clevis Connection",
+      "slug": "clevis-connection",
+      "letter": "C",
+      "source_section": "alphabetic_glossary",
+      "page": 23,
+      "source_pages": [
+        23
+      ],
+      "definition": "A forked connection with a pin passing through aligned holes, allowing rotation about the pin axis.",
+      "engineering_relevance": "Clevis connections are common in rods, ties, actuators, linkages, cranes, and mechanical supports.",
+      "app_solver_relevance": "The app should classify clevis connections as pin-type articulated joints.",
+      "id": 29
+    },
+    {
+      "term": "Collapse Mechanism",
+      "slug": "collapse-mechanism",
+      "letter": "C",
+      "source_section": "alphabetic_glossary",
+      "page": 24,
+      "source_pages": [
+        24
+      ],
+      "definition": "A motion pattern that forms when a structure develops enough releases, hinges, or failures to lose stability.",
+      "engineering_relevance": "Collapse mechanisms can form through plastic hinges, support failure, member buckling, or accidental over-release.",
+      "app_solver_relevance": "The app should detect mechanism formation and distinguish it from safe controlled articulation.",
+      "id": 30
+    },
+    {
+      "term": "Compatibility",
+      "slug": "compatibility",
+      "letter": "C",
+      "source_section": "alphabetic_glossary",
+      "page": 24,
+      "source_pages": [
+        24
+      ],
+      "definition": "The condition that connected structural parts must deform consistently without impossible separation or overlap.",
+      "engineering_relevance": "Compatibility is especially important in indeterminate and semi-rigid articulated systems.",
+      "app_solver_relevance": "The app should enforce compatibility at rigid joints and controlled relative compatibility at articulated joints.",
+      "also_defined_in_core_framework_pages": [
+        15
+      ],
+      "id": 31
+    },
+    {
+      "term": "Compression Member",
+      "slug": "compression-member",
+      "letter": "C",
+      "source_section": "alphabetic_glossary",
+      "page": 24,
+      "source_pages": [
+        24
+      ],
+      "definition": "A member carrying axial compression.",
+      "engineering_relevance": "Compression members include struts, columns, arch ribs, braces under compression, and top chords of trusses.",
+      "app_solver_relevance": "The app should flag compression members for buckling, slenderness, and end-condition checks.",
+      "id": 32
+    },
+    {
+      "term": "Compression-Only Support",
+      "slug": "compression-only-support",
+      "letter": "C",
+      "source_section": "alphabetic_glossary",
+      "page": 24,
+      "source_pages": [
+        24
+      ],
+      "definition": "A support that resists compression but cannot resist tension.",
+      "engineering_relevance": "Soil contact, masonry seating, some bearings, and uplift-sensitive foundations behave as compression-only supports.",
+      "app_solver_relevance": "The app should allow support uplift and contact loss in nonlinear mode.",
+      "id": 33
+    },
+    {
+      "term": "Condition Number",
+      "slug": "condition-number",
+      "letter": "C",
+      "source_section": "alphabetic_glossary",
+      "page": 24,
+      "source_pages": [
+        24
+      ],
+      "definition": "A numerical measure of how sensitive a matrix solution is to small errors or perturbations.",
+      "engineering_relevance": "A high condition number may indicate near-instability, poor scaling, weak restraints, or badly conditioned stiffness relationships.",
+      "app_solver_relevance": "The app should use condition number as a solver health indicator.",
+      "id": 34
+    },
+    {
+      "term": "Connection",
+      "slug": "connection",
+      "letter": "C",
+      "source_section": "core_framework_only",
+      "page": 9,
+      "source_pages": [
+        9
+      ],
+      "definition": "The physical detailing that realizes a joint condition, such as bolting, welding, pinning, bearing seating, clevis connection, or gusset plate assembly.",
+      "engineering_relevance": "The assumed analytical joint and the real construction connection may differ. A connection assumed pinned may behave semi-rigid; a connection assumed fixed may slip or rotate.",
+      "app_solver_relevance": "In the app, connection type should be separate from ideal joint assumption so that reality-check warnings can be generated. 2.2 Articulation Logic Application in App / Solver For every articulated structure, the app should ask five primary questions: 1. Which degrees of freedom are free? 2. Which degrees of freedom are restrained? 3. Which internal force components are transferred? 4. Which internal force components are released? 5. Does the remaining system stay stable after releases are applied? 2.3 Degrees of Freedom",
+      "id": 35
+    },
+    {
+      "term": "Constraint",
+      "slug": "constraint",
+      "letter": "C",
+      "source_section": "core_framework_only",
+      "page": 10,
+      "source_pages": [
+        10
+      ],
+      "definition": "A condition that restricts a degree of freedom.",
+      "engineering_relevance": "A fixed support provides several constraints, while a roller support provides fewer. The number and arrangement of constraints determine stability.",
+      "app_solver_relevance": "The app should count constraints and warn when the system is under-constrained or over-constrained.",
+      "id": 36
+    },
+    {
+      "term": "Constraint Equation",
+      "slug": "constraint-equation",
+      "letter": "C",
+      "source_section": "alphabetic_glossary",
+      "page": 24,
+      "source_pages": [
+        24
+      ],
+      "definition": "An equation that imposes a relationship between degrees of freedom.",
+      "engineering_relevance": "Constraint equations are used for rigid links, multi-point constraints, guided supports, symmetry, and kinematic mechanisms.",
+      "app_solver_relevance": "The app should use constraint equations for advanced articulated systems and mechanism modules.",
+      "id": 37
+    },
+    {
+      "term": "Contact Nonlinearity",
+      "slug": "contact-nonlinearity",
+      "letter": "C",
+      "source_section": "alphabetic_glossary",
+      "page": 25,
+      "source_pages": [
+        25
+      ],
+      "definition": "Nonlinear behaviour caused by opening, closing, sliding, separation, impact, or changing contact surfaces.",
+      "engineering_relevance": "Examples include uplift supports, gap elements, rocking bases, sliding bearings, and compression-only contact.",
+      "app_solver_relevance": "The app should treat contact nonlinearity as an advanced analysis mode.",
+      "id": 38
+    },
+    {
+      "term": "Control Joint",
+      "slug": "control-joint",
+      "letter": "C",
+      "source_section": "alphabetic_glossary",
+      "page": 25,
+      "source_pages": [
+        25
+      ],
+      "definition": "A joint introduced to control cracking, shrinkage, or movement in concrete, masonry, tile, or cladding systems.",
+      "engineering_relevance": "A control joint is not automatically a structural hinge, but it may affect force transfer and movement.",
+      "app_solver_relevance": "The app should distinguish architectural/control joints from true structural articulation.",
+      "id": 39
+    },
+    {
+      "term": "Crane Boom",
+      "slug": "crane-boom",
+      "letter": "C",
+      "source_section": "alphabetic_glossary",
+      "page": 25,
+      "source_pages": [
+        25
+      ],
+      "definition": "A projecting structural arm used to lift or move loads.",
+      "engineering_relevance": "Crane booms are often pin-connected, braced, lattice-like, and stability-sensitive.",
+      "app_solver_relevance": "The app can include crane-boom templates with pin joints, axial members, load radius, and stability warnings.",
+      "id": 40
+    },
+    {
+      "term": "Crown Hinge",
+      "slug": "crown-hinge",
+      "letter": "C",
+      "source_section": "alphabetic_glossary",
+      "page": 25,
+      "source_pages": [
+        25
+      ],
+      "definition": "An internal hinge located near the crown of an arch or the apex of a frame.",
+      "engineering_relevance": "A crown hinge makes a three-hinged arch statically determinate and reduces thermal or settlement-induced moment.",
+      "app_solver_relevance": "The app should include crown hinge placement for three-hinged arch templates.",
+      "id": 41
+    },
+    {
+      "term": "Damper",
+      "slug": "damper",
+      "letter": "D",
+      "source_section": "alphabetic_glossary",
+      "page": 26,
+      "source_pages": [
+        26
+      ],
+      "definition": "A device or modelling element that dissipates energy through velocity-dependent, frictional, hysteretic, or material-based resistance.",
+      "engineering_relevance": "Dampers are used in seismic isolation, vibration control, cable systems, movable bridges, tall structures, and adaptive articulated frames.",
+      "app_solver_relevance": "The app can include dampers as optional dynamic or semi-dynamic elements connected to selected degrees of freedom.",
+      "id": 42
+    },
+    {
+      "term": "Dead Load",
+      "slug": "dead-load",
+      "letter": "D",
+      "source_section": "alphabetic_glossary",
+      "page": 26,
+      "source_pages": [
+        26
+      ],
+      "definition": "Permanent load due to the self-weight of structural and non-structural components.",
+      "engineering_relevance": "Dead load is usually the baseline load for beams, frames, arches, trusses, bridges, roofs, and articulated systems.",
+      "app_solver_relevance": "The app should allow automatic self-weight generation based on material density, cross-section, and member length.",
+      "id": 43
+    },
+    {
+      "term": "Deflection",
+      "slug": "deflection",
+      "letter": "D",
+      "source_section": "alphabetic_glossary",
+      "page": 26,
+      "source_pages": [
+        26
+      ],
+      "definition": "The displacement of a member or structure under load.",
+      "engineering_relevance": "Deflection controls serviceability in beams, trusses, bridge decks, roofs, cranes, and articulated frames.",
+      "app_solver_relevance": "The app should output deflection diagrams, maximum deflection values, and serviceability warnings.",
+      "id": 44
+    },
+    {
+      "term": "Deformed Shape",
+      "slug": "deformed-shape",
+      "letter": "D",
+      "source_section": "alphabetic_glossary",
+      "page": 26,
+      "source_pages": [
+        26
+      ],
+      "definition": "The displaced configuration of a structure after loads, support movements, or imposed actions are applied.",
+      "engineering_relevance": "The deformed shape helps identify sway, rotation, hinge action, mechanism tendency, uplift, and bearing movement.",
+      "app_solver_relevance": "The app should plot exaggerated and true-scale deformed shapes.",
+      "id": 45
+    },
+    {
+      "term": "Degree of Freedom",
+      "slug": "degree-of-freedom",
+      "letter": "D",
+      "source_section": "core_framework_only",
+      "page": 9,
+      "source_pages": [
+        9
+      ],
+      "definition": "An independent displacement or rotation needed to describe the movement of a joint, member, or body.",
+      "engineering_relevance": "In a 2D frame node, the usual degrees of freedom are horizontal displacement, vertical displacement, and in-plane rotation. In a 3D frame node, three translations and three rotations may be required.",
+      "app_solver_relevance": "The solver must build the global stiffness matrix using active degrees of freedom, restrained degrees of freedom, and released degrees of freedom.",
+      "id": 46
+    },
+    {
+      "term": "Degree of Indeterminacy",
+      "slug": "degree-of-indeterminacy",
+      "letter": "D",
+      "source_section": "alphabetic_glossary",
+      "page": 26,
+      "source_pages": [
+        26,
+        27
+      ],
+      "definition": "The number of redundant force or displacement unknowns beyond what can be solved using independent equilibrium equations alone.",
+      "engineering_relevance": "Indeterminacy determines whether equilibrium-only analysis is enough or whether stiffness/compatibility methods are required.",
+      "app_solver_relevance": "The app should compute an approximate degree of indeterminacy and use it to guide solver selection.",
+      "id": 47
+    },
+    {
+      "term": "Deployable Structure",
+      "slug": "deployable-structure",
+      "letter": "D",
+      "source_section": "alphabetic_glossary",
+      "page": 27,
+      "source_pages": [
+        27
+      ],
+      "definition": "A structure designed to fold, unfold, expand, retract, or change configuration through articulated joints and linkages.",
+      "engineering_relevance": "Deployable structures appear in temporary roofs, space structures, kinetic facades, shelters, cranes, scissor systems, and emergency structures.",
+      "app_solver_relevance": "The app should treat deployable structures as both kinematic systems and structural systems after deployment.",
+      "id": 48
+    },
+    {
+      "term": "Determinacy",
+      "slug": "determinacy",
+      "letter": "D",
+      "source_section": "alphabetic_glossary",
+      "page": 27,
+      "source_pages": [
+        27
+      ],
+      "definition": "The condition describing whether all reactions and internal forces can be obtained from equilibrium equations alone.",
+      "engineering_relevance": "Determinate systems are usually easier to analyse but may have less redundancy. Indeterminate systems require compatibility and stiffness analysis.",
+      "app_solver_relevance": "The app should classify each structure as determinate, indeterminate, unstable, or mechanism-like.",
+      "id": 49
+    },
+    {
+      "term": "Displacement",
+      "slug": "displacement",
+      "letter": "D",
+      "source_section": "alphabetic_glossary",
+      "page": 27,
+      "source_pages": [
+        27
+      ],
+      "definition": "Linear or angular movement of a point, joint, support, member, or body.",
+      "engineering_relevance": "Displacement may be caused by load, temperature, settlement, prestress, actuation, creep, shrinkage, or dynamic excitation.",
+      "app_solver_relevance": "The app should track translational and rotational displacements separately.",
+      "id": 50
+    },
+    {
+      "term": "Displacement Method",
+      "slug": "displacement-method",
+      "letter": "D",
+      "source_section": "alphabetic_glossary",
+      "page": 27,
+      "source_pages": [
+        27
+      ],
+      "definition": "A structural analysis method in which unknown displacements and rotations are solved first, then internal forces are recovered.",
+      "engineering_relevance": "The matrix stiffness method is a major computational form of the displacement method.",
+      "app_solver_relevance": "The app should use displacement-method logic for frames, beams, semi-rigid joints, spring supports, and complex articulated systems.",
+      "id": 51
+    },
+    {
+      "term": "Distributed Load",
+      "slug": "distributed-load",
+      "letter": "D",
+      "source_section": "alphabetic_glossary",
+      "page": 27,
+      "source_pages": [
+        27
+      ],
+      "definition": "A load spread over a length, area, or volume instead of being applied at a single point.",
+      "engineering_relevance": "Distributed loads include self-weight, floor loads, wind pressure, snow load, hydrostatic load, and equipment loading.",
+      "app_solver_relevance": "The app should support uniform, linearly varying, patch, trapezoidal, and user-defined distributed loads.",
+      "id": 52
+    },
+    {
+      "term": "Double Curvature",
+      "slug": "double-curvature",
+      "letter": "D",
+      "source_section": "alphabetic_glossary",
+      "page": 28,
+      "source_pages": [
+        28
+      ],
+      "definition": "A bending condition where a member bends in opposite curvature over different portions of its length.",
+      "engineering_relevance": "Double curvature appears in sway frames, fixed-end members, partially restrained frames, and some articulated frame systems.",
+      "app_solver_relevance": "The app can identify double-curvature bending from the bending moment diagram.",
+      "id": 53
+    },
+    {
+      "term": "Drift",
+      "slug": "drift",
+      "letter": "D",
+      "source_section": "alphabetic_glossary",
+      "page": 28,
+      "source_pages": [
+        28
+      ],
+      "definition": "Lateral displacement of a storey, frame, tower, pier, or structural system.",
+      "engineering_relevance": "Drift is important in frames, base-isolated structures, seismic systems, bridge piers, cranes, and tall articulated assemblies.",
+      "app_solver_relevance": "The app should compute total drift and inter-storey drift where relevant.",
+      "id": 54
+    },
+    {
+      "term": "Dynamic Load",
+      "slug": "dynamic-load",
+      "letter": "D",
+      "source_section": "alphabetic_glossary",
+      "page": 28,
+      "source_pages": [
+        28
+      ],
+      "definition": "A load that varies with time and may produce inertial or vibration effects.",
+      "engineering_relevance": "Dynamic loads include earthquake, wind gusts, moving machinery, crane operation, vehicle motion, impact, and human-induced vibration.",
+      "app_solver_relevance": "The app can initially support dynamic loads as equivalent static loads, with future dynamic modules.",
+      "id": 55
+    },
+    {
+      "term": "Eccentric Connection",
+      "slug": "eccentric-connection",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 29,
+      "source_pages": [
+        29
+      ],
+      "definition": "A connection in which the line of action of force does not pass through the centroidal axis or intended joint center.",
+      "engineering_relevance": "Eccentricity creates secondary bending moments, torsion, local stress, and unexpected joint demand.",
+      "app_solver_relevance": "The app should flag eccentric connections and optionally generate secondary moment checks.",
+      "id": 56
+    },
+    {
+      "term": "Eccentricity",
+      "slug": "eccentricity",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 29,
+      "source_pages": [
+        29
+      ],
+      "definition": "The offset distance between a load path, member axis, connection center, or reaction line and the reference centroidal axis.",
+      "engineering_relevance": "Small eccentricities can produce significant secondary moments in articulated systems, especially at pins, bearings, brackets, and gusset plates.",
+      "app_solver_relevance": "The app should allow eccentricity input for realistic joint and connection modelling.",
+      "id": 57
+    },
+    {
+      "term": "Effective Length",
+      "slug": "effective-length",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 29,
+      "source_pages": [
+        29
+      ],
+      "definition": "The equivalent buckling length of a compression member considering end restraints and joint behaviour.",
+      "engineering_relevance": "Pinned, fixed, semi-rigid, and sway conditions change the effective length of columns, struts, braces, and compression chords.",
+      "app_solver_relevance": "The app should estimate effective length factor based on end condition and warn when compression members are slender.",
+      "id": 58
+    },
+    {
+      "term": "Elastic Support",
+      "slug": "elastic-support",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 29,
+      "source_pages": [
+        29
+      ],
+      "definition": "A support that restrains movement through finite stiffness instead of perfect fixity.",
+      "engineering_relevance": "Soil, elastomeric bearings, springs, flexible foundations, pads, and support plates often behave elastically rather than rigidly.",
+      "app_solver_relevance": "The app should model elastic supports using translational and rotational spring constants.",
+      "id": 59
+    },
+    {
+      "term": "Elastomeric Bearing",
+      "slug": "elastomeric-bearing",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 30,
+      "source_pages": [
+        30
+      ],
+      "definition": "A bearing made of rubber-like material, often laminated with steel plates, that supports vertical load while allowing rotation and shear deformation.",
+      "engineering_relevance": "Elastomeric bearings are common in bridges and building isolation systems because they accommodate movement and rotation.",
+      "app_solver_relevance": "The app should include elastomeric bearing properties such as vertical stiffness, shear stiffness, rotation capacity, and movement limit.",
+      "id": 60
+    },
+    {
+      "term": "Element",
+      "slug": "element",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 30,
+      "source_pages": [
+        30
+      ],
+      "definition": "A mathematical representation of a structural part used in analysis, such as a bar, beam, frame member, cable, spring, gap, or rigid link.",
+      "engineering_relevance": "Elements convert physical members into solvable equations.",
+      "app_solver_relevance": "The app should map user geometry into solver elements.",
+      "id": 61
+    },
+    {
+      "term": "Element Stiffness Matrix",
+      "slug": "element-stiffness-matrix",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 30,
+      "source_pages": [
+        30
+      ],
+      "definition": "The stiffness matrix representing the force-displacement relationship of one structural element.",
+      "engineering_relevance": "Element stiffness matrices are assembled into the global stiffness matrix.",
+      "app_solver_relevance": "The app should use element stiffness matrices internally while exposing user-friendly structural terms externally.",
+      "id": 62
+    },
+    {
+      "term": "End Condition",
+      "slug": "end-condition",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 30,
+      "source_pages": [
+        30
+      ],
+      "definition": "The restraint condition at a member end, such as fixed, pinned, free, guided, semi-rigid, or released.",
+      "engineering_relevance": "End conditions strongly affect bending moments, deflection, buckling length, and force distribution.",
+      "app_solver_relevance": "The app should require explicit end conditions for each member.",
+      "id": 63
+    },
+    {
+      "term": "End Release",
+      "slug": "end-release",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 30,
+      "source_pages": [
+        30
+      ],
+      "definition": "A release applied at the end of a member to remove transfer of a selected force or moment component.",
+      "engineering_relevance": "Moment end releases are common in frame models to represent pin connections.",
+      "app_solver_relevance": "The app should support end-release input and automatically update the stiffness formulation.",
+      "id": 64
+    },
+    {
+      "term": "Energy Dissipation",
+      "slug": "energy-dissipation",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 30,
+      "source_pages": [
+        30
+      ],
+      "definition": "The conversion of mechanical energy into heat or other forms through damping, friction, yielding, hysteresis, or material deformation.",
+      "engineering_relevance": "Energy dissipation is essential in seismic systems, base isolation, dampers, sliding joints, and controlled rocking systems.",
+      "app_solver_relevance": "The app can include energy dissipation as an advanced feature for dynamic and seismic modules.",
+      "id": 65
+    },
+    {
+      "term": "Equilibrium",
+      "slug": "equilibrium",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 31,
+      "source_pages": [
+        31
+      ],
+      "definition": "The condition where total forces and total moments balance.",
+      "engineering_relevance": "Equilibrium is required for the whole structure, each member, each joint, and each free-body diagram.",
+      "app_solver_relevance": "The app should include numerical equilibrium residual checks after solving.",
+      "also_defined_in_core_framework_pages": [
+        12
+      ],
+      "id": 66
+    },
+    {
+      "term": "Euler Buckling",
+      "slug": "euler-buckling",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 31,
+      "source_pages": [
+        31
+      ],
+      "definition": "The elastic instability of a slender compression member under axial load.",
+      "engineering_relevance": "Pinned, fixed, and semi-rigid end conditions change the critical buckling load.",
+      "app_solver_relevance": "The app should include preliminary Euler buckling checks for struts, compression chords, braces, and columns. Formula / Relation Euler critical load for an ideal compression member: Pcr = π2EI (KL)2 where Pcr is the critical load, E is Young’s modulus, I is second moment of area, K is effective length factor, and L is actual member length.",
+      "id": 67
+    },
+    {
+      "term": "Expansion Bearing",
+      "slug": "expansion-bearing",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 31,
+      "source_pages": [
+        31
+      ],
+      "definition": "A bearing that permits longitudinal or transverse movement due to temperature change, creep, shrinkage, settlement, or other imposed actions.",
+      "engineering_relevance": "Expansion bearings prevent thermal lock-in and unwanted restraint forces.",
+      "app_solver_relevance": "The app should classify bearings as fixed, guided, free, or expansion type.",
+      "id": 68
+    },
+    {
+      "term": "Expansion Joint",
+      "slug": "expansion-joint",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 31,
+      "source_pages": [
+        31
+      ],
+      "definition": "A joint designed to permit relative movement between structural or non-structural parts.",
+      "engineering_relevance": "Expansion joints are common in bridges, long buildings, pavements, facades, roofs, and industrial structures.",
+      "app_solver_relevance": "The app should distinguish expansion joints from structural hinges because they may not carry the same internal forces.",
+      "id": 69
+    },
+    {
+      "term": "External Hinge",
+      "slug": "external-hinge",
+      "letter": "E",
+      "source_section": "alphabetic_glossary",
+      "page": 31,
+      "source_pages": [
+        31,
+        32
+      ],
+      "definition": "A hinge located at a support or boundary of a structure.",
+      "engineering_relevance": "External hinges allow rotation while restraining selected translations.",
+      "app_solver_relevance": "The app should treat hinged supports as reaction-generating supports with no ideal moment restraint.",
+      "id": 70
+    },
+    {
+      "term": "Fatigue",
+      "slug": "fatigue",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 33,
+      "source_pages": [
+        33
+      ],
+      "definition": "Progressive damage caused by repeated cyclic loading.",
+      "engineering_relevance": "Articulated structures with pins, bearings, cables, bolts, crane members, and bridge components may be fatigue-sensitive.",
+      "app_solver_relevance": "The app should flag cyclic-load cases and fatigue-prone details for inspection notes.",
+      "id": 71
+    },
+    {
+      "term": "Fatigue Crack",
+      "slug": "fatigue-crack",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 33,
+      "source_pages": [
+        33
+      ],
+      "definition": "A crack that initiates and grows under repeated stress cycles.",
+      "engineering_relevance": "Fatigue cracking often occurs at stress concentrations, weld toes, bolt holes, pin holes, gusset plates, and bearing details.",
+      "app_solver_relevance": "The app can include fatigue crack as a defect category in inspection and diagnostics mode.",
+      "id": 72
+    },
+    {
+      "term": "Fixed Bearing",
+      "slug": "fixed-bearing",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 33,
+      "source_pages": [
+        33
+      ],
+      "definition": "A bearing that restrains horizontal movement while allowing rotation.",
+      "engineering_relevance": "Fixed bearings establish a reference point for bridge or deck movement and transfer lateral loads to substructure.",
+      "app_solver_relevance": "The app should identify fixed-bearing locations and route lateral forces accordingly.",
+      "id": 73
+    },
+    {
+      "term": "Fixed Joint",
+      "slug": "fixed-joint",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 33,
+      "source_pages": [
+        33
+      ],
+      "definition": "A joint that prevents relative rotation and transfers bending moment, shear, axial force, and sometimes torsion.",
+      "engineering_relevance": "Fixed joints create moment continuity and make frames stiffer, but may attract secondary forces due to settlement or temperature.",
+      "app_solver_relevance": "The app should treat fixed joints as full compatibility connections unless semi-rigid behaviour is specified.",
+      "id": 74
+    },
+    {
+      "term": "Fixed Support",
+      "slug": "fixed-support",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 33,
+      "source_pages": [
+        33,
+        34
+      ],
+      "definition": "A support that restrains both translation and rotation.",
+      "engineering_relevance": "In 2D, a fixed support provides horizontal reaction, vertical reaction, and moment reaction.",
+      "app_solver_relevance": "The app should generate all applicable reaction components for a fixed support.",
+      "id": 75
+    },
+    {
+      "term": "Flexural Rigidity",
+      "slug": "flexural-rigidity",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 34,
+      "source_pages": [
+        34
+      ],
+      "definition": "The bending stiffness of a member, equal to EI.",
+      "engineering_relevance": "Higher flexural rigidity reduces curvature and deflection under bending.",
+      "app_solver_relevance": "The app should use EI to compute beam, frame, and arch bending response.",
+      "id": 76
+    },
+    {
+      "term": "Foldable Structure",
+      "slug": "foldable-structure",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 34,
+      "source_pages": [
+        34
+      ],
+      "definition": "A structure designed to fold through hinges, joints, flexible panels, or linkage mechanisms.",
+      "engineering_relevance": "Foldable structures are used in temporary shelters, deployable roofs, aerospace structures, kinetic installations, and portable construction systems.",
+      "app_solver_relevance": "The app should include foldable structures in the deployable-mechanism category.",
+      "id": 77
+    },
+    {
+      "term": "Force Method",
+      "slug": "force-method",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 34,
+      "source_pages": [
+        34
+      ],
+      "definition": "An analysis method where redundant forces are selected as unknowns and compatibility equations are used to solve them.",
+      "engineering_relevance": "The force method is useful for indeterminate beams, arches, frames, and support-settlement problems.",
+      "app_solver_relevance": "The app can use force-method explanations for educational mode even if the backend uses stiffness analysis.",
+      "id": 78
+    },
+    {
+      "term": "Force Transfer",
+      "slug": "force-transfer",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 34,
+      "source_pages": [
+        34
+      ],
+      "definition": "The process by which loads pass through a connection, joint, member, bearing, or support.",
+      "engineering_relevance": "Articulated structures require careful definition of which forces are transferred and which moments are released.",
+      "app_solver_relevance": "The app should describe force transfer at every joint type.",
+      "id": 79
+    },
+    {
+      "term": "Frame",
+      "slug": "frame",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 34,
+      "source_pages": [
+        34
+      ],
+      "definition": "A structural system whose members can carry axial force, shear force, and bending moment.",
+      "engineering_relevance": "Frames may be rigid-jointed, pinned, braced, semi-rigid, or articulated.",
+      "app_solver_relevance": "The app should support frame templates with mixed joint conditions.",
+      "id": 80
+    },
+    {
+      "term": "Free Body",
+      "slug": "free-body",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 35,
+      "source_pages": [
+        35
+      ],
+      "definition": "A structural body isolated from its surroundings for equilibrium analysis.",
+      "engineering_relevance": "Free-body analysis makes support reactions, hinge forces, member forces, and load paths visible.",
+      "app_solver_relevance": "The app should generate free-body views for members, joints, and whole systems.",
+      "id": 81
+    },
+    {
+      "term": "Free End",
+      "slug": "free-end",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 35,
+      "source_pages": [
+        35
+      ],
+      "definition": "A member end with no support restraint.",
+      "engineering_relevance": "Cantilever tips, overhangs, suspended spans, and projecting arms may contain free ends.",
+      "app_solver_relevance": "The app should treat free ends as unrestrained and warn if the whole structure becomes unstable.",
+      "id": 82
+    },
+    {
+      "term": "Free-Body Diagram",
+      "slug": "free-body-diagram",
+      "letter": "F",
+      "source_section": "core_framework_only",
+      "page": 12,
+      "source_pages": [
+        12
+      ],
+      "definition": "A separated diagram of a member, joint, or whole structure showing all applied loads, reactions, internal forces, and moments.",
+      "engineering_relevance": "Free-body diagrams are the foundation of hand analysis for trusses, beams, arches, cranes, and articulated frames.",
+      "app_solver_relevance": "The app should generate free-body diagrams for selected members, supports, and joints.",
+      "id": 83
+    },
+    {
+      "term": "Fretting",
+      "slug": "fretting",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 35,
+      "source_pages": [
+        35
+      ],
+      "definition": "Surface damage caused by small repeated relative motion between contacting parts.",
+      "engineering_relevance": "Fretting can occur at pins, bearings, bolted joints, sliding plates, and cable sockets.",
+      "app_solver_relevance": "The app can include fretting as a defect mode in inspection and maintenance reports.",
+      "id": 84
+    },
+    {
+      "term": "Friction Joint",
+      "slug": "friction-joint",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 35,
+      "source_pages": [
+        35
+      ],
+      "definition": "A connection where force transfer depends partly or fully on friction between contact surfaces.",
+      "engineering_relevance": "Friction joints may slip if the friction capacity is exceeded.",
+      "app_solver_relevance": "The app should include friction limit checks in advanced connection mode.",
+      "id": 85
+    },
+    {
+      "term": "Funicular Form",
+      "slug": "funicular-form",
+      "letter": "F",
+      "source_section": "alphabetic_glossary",
+      "page": 35,
+      "source_pages": [
+        35
+      ],
+      "definition": "A shape that carries a particular loading pattern mainly through axial force with minimal bending.",
+      "engineering_relevance": "Cables, arches, hanging chains, compression shells, and some articulated systems use funicular logic.",
+      "app_solver_relevance": "The app should explain whether a structure is bending-dominant or funicular/axial-dominant.",
+      "id": 86
+    },
+    {
+      "term": "Gap Element",
+      "slug": "gap-element",
+      "letter": "G",
+      "source_section": "alphabetic_glossary",
+      "page": 36,
+      "source_pages": [
+        36
+      ],
+      "definition": "A modelling element that permits free movement until a specified gap closes, after which contact force develops.",
+      "engineering_relevance": "Gap elements are useful for bearings, uplift, impact stops, expansion joints, and contact supports.",
+      "app_solver_relevance": "The app should include gap elements in nonlinear contact mode.",
+      "id": 87
+    },
+    {
+      "term": "Geometric Compatibility",
+      "slug": "geometric-compatibility",
+      "letter": "G",
+      "source_section": "alphabetic_glossary",
+      "page": 36,
+      "source_pages": [
+        36
+      ],
+      "definition": "The condition that connected members fit together after deformation without impossible separation or overlap.",
+      "engineering_relevance": "Compatibility is essential for indeterminate structures, semi-rigid joints, frames, and systems with imposed settlement or temperature movement.",
+      "app_solver_relevance": "The app should enforce compatibility according to joint type and release condition.",
+      "id": 88
+    },
+    {
+      "term": "Geometric Nonlinearity",
+      "slug": "geometric-nonlinearity",
+      "letter": "G",
+      "source_section": "alphabetic_glossary",
+      "page": 36,
+      "source_pages": [
+        36
+      ],
+      "definition": "A condition where deformation changes the equilibrium equations or force path significantly.",
+      "engineering_relevance": "Large displacement, cable sag, arch thrust, P-∆ effects, snap-through, and rocking systems may require geometric nonlinear analysis.",
+      "app_solver_relevance": "The app should mark geometric nonlinearity as an advanced solver option.",
+      "id": 89
+    },
+    {
+      "term": "Gerber Beam",
+      "slug": "gerber-beam",
+      "letter": "G",
+      "source_section": "alphabetic_glossary",
+      "page": 36,
+      "source_pages": [
+        36
+      ],
+      "definition": "A continuous beam system made statically determinate by inserting internal hinges.",
+      "engineering_relevance": "Gerber beams reduce bending continuity and allow simpler reaction calculation, but hinge placement controls moment distribution.",
+      "app_solver_relevance": "The app should include Gerber beam templates with internal hinge placement.",
+      "id": 90
+    },
+    {
+      "term": "Global Coordinate System",
+      "slug": "global-coordinate-system",
+      "letter": "G",
+      "source_section": "alphabetic_glossary",
+      "page": 37,
+      "source_pages": [
+        37
+      ],
+      "definition": "The reference coordinate system used for the entire structure.",
+      "engineering_relevance": "Member forces and stiffness are often computed locally, then transformed into global coordinates.",
+      "app_solver_relevance": "The app should show node coordinates, support directions, and load directions in the global system.",
+      "id": 91
+    },
+    {
+      "term": "Global Equilibrium",
+      "slug": "global-equilibrium",
+      "letter": "G",
+      "source_section": "alphabetic_glossary",
+      "page": 37,
+      "source_pages": [
+        37
+      ],
+      "definition": "Equilibrium of the complete structure under applied loads and support reactions.",
+      "engineering_relevance": "Global equilibrium checks verify that total horizontal forces, vertical forces, and moments balance.",
+      "app_solver_relevance": "The app should report equilibrium residuals after solving.",
+      "id": 92
+    },
+    {
+      "term": "Global Stiffness Matrix",
+      "slug": "global-stiffness-matrix",
+      "letter": "G",
+      "source_section": "alphabetic_glossary",
+      "page": 37,
+      "source_pages": [
+        37
+      ],
+      "definition": "The assembled stiffness matrix representing the complete structural model.",
+      "engineering_relevance": "It combines element stiffness, support restraints, joint releases, spring supports, and constraints.",
+      "app_solver_relevance": "The app uses this internally for matrix stiffness analysis.",
+      "id": 93
+    },
+    {
+      "term": "Gravity Load",
+      "slug": "gravity-load",
+      "letter": "G",
+      "source_section": "alphabetic_glossary",
+      "page": 37,
+      "source_pages": [
+        37
+      ],
+      "definition": "A load acting due to gravity, usually vertically downward.",
+      "engineering_relevance": "Gravity loads include self-weight, floor loads, equipment loads, roof loads, and imposed occupancy loads.",
+      "app_solver_relevance": "The app should support gravity-load generation for all structural systems.",
+      "id": 94
+    },
+    {
+      "term": "Guided Bearing",
+      "slug": "guided-bearing",
+      "letter": "G",
+      "source_section": "alphabetic_glossary",
+      "page": 37,
+      "source_pages": [
+        37
+      ],
+      "definition": "A bearing that allows movement in one direction while restraining movement in another.",
+      "engineering_relevance": "Guided bearings are used in bridges and long-span systems to control expansion direction and lateral load path.",
+      "app_solver_relevance": "The app should allow guide direction input and generate lateral restraint reactions accordingly.",
+      "id": 95
+    },
+    {
+      "term": "Guided Support",
+      "slug": "guided-support",
+      "letter": "G",
+      "source_section": "alphabetic_glossary",
+      "page": 37,
+      "source_pages": [
+        37
+      ],
+      "definition": "A support that allows translation along a selected direction while restraining translation perpendicular to that direction.",
+      "engineering_relevance": "Guided supports represent sliding blocks, rails, guide slots, and constrained bearing movement.",
+      "app_solver_relevance": "The app should define guided supports using local guide-axis orientation.",
+      "id": 96
+    },
+    {
+      "term": "Gusset Plate",
+      "slug": "gusset-plate",
+      "letter": "G",
+      "source_section": "alphabetic_glossary",
+      "page": 38,
+      "source_pages": [
+        38
+      ],
+      "definition": "A plate used to connect multiple members, commonly in trusses, bracing systems, cranes, towers, and steel frames.",
+      "engineering_relevance": "Gusset plates transfer axial, shear, and sometimes moment effects between members.",
+      "app_solver_relevance": "The app should include gusset plates as connection-detail components in report mode.",
+      "id": 97
+    },
+    {
+      "term": "Hanger",
+      "slug": "hanger",
+      "letter": "H",
+      "source_section": "alphabetic_glossary",
+      "page": 39,
+      "source_pages": [
+        39
+      ],
+      "definition": "A tension member suspending a deck, beam, pipe, roof, or load from a cable, arch, truss, or supporting frame.",
+      "engineering_relevance": "Hangers are common in suspension bridges, tied arches, suspended roofs, industrial supports, and mechanical services.",
+      "app_solver_relevance": "The app should model hangers as tension-dominant or tension-only members.",
+      "id": 98
+    },
+    {
+      "term": "Hinge",
+      "slug": "hinge",
+      "letter": "H",
+      "source_section": "alphabetic_glossary",
+      "page": 39,
+      "source_pages": [
+        39
+      ],
+      "definition": "A joint or release that allows rotation while transferring selected force components.",
+      "engineering_relevance": "Hinges reduce or eliminate bending moment transfer and are central to articulated beams, arches, frames, trusses, and mechanisms.",
+      "app_solver_relevance": "The app should represent hinges as rotational releases and show zero or reduced moment transfer.",
+      "id": 99
+    },
+    {
+      "term": "Hinge Force",
+      "slug": "hinge-force",
+      "letter": "H",
+      "source_section": "alphabetic_glossary",
+      "page": 39,
+      "source_pages": [
+        39
+      ],
+      "definition": "The internal force transmitted through a hinge.",
+      "engineering_relevance": "Even when bending moment is zero at a hinge, axial and shear forces may still be transmitted.",
+      "app_solver_relevance": "The app should report hinge force components separately from hinge moment.",
+      "id": 100
+    },
+    {
+      "term": "Hinge Line",
+      "slug": "hinge-line",
+      "letter": "H",
+      "source_section": "alphabetic_glossary",
+      "page": 39,
+      "source_pages": [
+        39
+      ],
+      "definition": "An axis about which rotation occurs.",
+      "engineering_relevance": "Hinge-line orientation matters in slabs, shells, foldable panels, bridge bearings, and 3D articulated systems.",
+      "app_solver_relevance": "The app should support hinge-axis definition in 3D models.",
+      "id": 101
+    },
+    {
+      "term": "Hinged Support",
+      "slug": "hinged-support",
+      "letter": "H",
+      "source_section": "alphabetic_glossary",
+      "page": 39,
+      "source_pages": [
+        39,
+        40
+      ],
+      "definition": "A support that restrains translation but permits rotation.",
+      "engineering_relevance": "In 2D, a hinged support usually provides horizontal and vertical reactions but no moment reaction.",
+      "app_solver_relevance": "The app should map hinged support to translational restraints and released rotation.",
+      "id": 102
+    },
+    {
+      "term": "Horizontal Thrust",
+      "slug": "horizontal-thrust",
+      "letter": "H",
+      "source_section": "alphabetic_glossary",
+      "page": 40,
+      "source_pages": [
+        40
+      ],
+      "definition": "The horizontal reaction component generated by arches, cables, tied systems, frames, and inclined members.",
+      "engineering_relevance": "Horizontal thrust is critical for arch foundations, tied arches, suspension systems, and portal frames.",
+      "app_solver_relevance": "The app should compute and explain thrust paths.",
+      "id": 103
+    },
+    {
+      "term": "Hybrid Structure",
+      "slug": "hybrid-structure",
+      "letter": "H",
+      "source_section": "alphabetic_glossary",
+      "page": 40,
+      "source_pages": [
+        40
+      ],
+      "definition": "A structural system combining multiple behaviours, such as frame action, truss action, cable action, arch action, bearing movement, or deployable mechanism behaviour.",
+      "engineering_relevance": "Many real structures are hybrid rather than purely pinned, fixed, or cable-based.",
+      "app_solver_relevance": "The app should allow mixed modelling components in a single model.",
+      "id": 104
+    },
+    {
+      "term": "Hysteresis",
+      "slug": "hysteresis",
+      "letter": "H",
+      "source_section": "alphabetic_glossary",
+      "page": 40,
+      "source_pages": [
+        40
+      ],
+      "definition": "Energy-dissipating behaviour where the unloading path differs from the loading path.",
+      "engineering_relevance": "Hysteresis appears in dampers, yielding steel, friction devices, base isolators, rocking systems, and cyclic joint behaviour.",
+      "app_solver_relevance": "The app can include hysteresis in future seismic and nonlinear modules.",
+      "id": 105
+    },
+    {
+      "term": "Impact Load",
+      "slug": "impact-load",
+      "letter": "I",
+      "source_section": "alphabetic_glossary",
+      "page": 41,
+      "source_pages": [
+        41
+      ],
+      "definition": "A short-duration load applied suddenly due to collision, falling object, machinery action, vehicle impact, crane operation, or accidental contact.",
+      "engineering_relevance": "Impact can produce forces much larger than equivalent static loading because inertia and energy transfer become important.",
+      "app_solver_relevance": "The app can initially model impact as an equivalent static load with a warning that full dynamic analysis may be required.",
+      "id": 106
+    },
+    {
+      "term": "Imposed Displacement",
+      "slug": "imposed-displacement",
+      "letter": "I",
+      "source_section": "alphabetic_glossary",
+      "page": 41,
+      "source_pages": [
+        41
+      ],
+      "definition": "A prescribed movement applied to a support, joint, member end, actuator, or bearing.",
+      "engineering_relevance": "Support settlement, thermal expansion, jack movement, actuator stroke, and foundation shift can all be modelled as imposed displacement.",
+      "app_solver_relevance": "The app should allow imposed displacement inputs and compute resulting reactions and internal forces.",
+      "id": 107
+    },
+    {
+      "term": "Imposed Rotation",
+      "slug": "imposed-rotation",
+      "letter": "I",
+      "source_section": "alphabetic_glossary",
+      "page": 41,
+      "source_pages": [
+        41
+      ],
+      "definition": "A prescribed angular movement applied at a joint, support, hinge, bearing, or actuator.",
+      "engineering_relevance": "Imposed rotation may occur in rocking systems, bearing seats, mechanical linkages, movable bridges, and controlled deployable structures.",
+      "app_solver_relevance": "The app should support imposed rotation as a boundary or actuation input.",
+      "id": 108
+    },
+    {
+      "term": "Influence Line",
+      "slug": "influence-line",
+      "letter": "I",
+      "source_section": "alphabetic_glossary",
+      "page": 41,
+      "source_pages": [
+        41
+      ],
+      "definition": "A diagram showing how a response quantity changes as a unit load moves across a structure.",
+      "engineering_relevance": "Influence lines are important for bridges, cranes, gantries, moving loads, and articulated beam systems.",
+      "app_solver_relevance": "The app should include influence-line generation for reactions, shear, moment, and deflection at selected points.",
+      "id": 109
+    },
+    {
+      "term": "Initial Imperfection",
+      "slug": "initial-imperfection",
+      "letter": "I",
+      "source_section": "alphabetic_glossary",
+      "page": 42,
+      "source_pages": [
+        42
+      ],
+      "definition": "A small deviation from perfect geometry, alignment, straightness, verticality, or connection position.",
+      "engineering_relevance": "Initial imperfections affect buckling, stability, second-order effects, crane booms, columns, struts, and slender articulated systems.",
+      "app_solver_relevance": "The app should include imperfection warnings for compression-dominant and stability-sensitive models.",
+      "id": 110
+    },
+    {
+      "term": "Instantaneous Center of Rotation",
+      "slug": "instantaneous-center-of-rotation",
+      "letter": "I",
+      "source_section": "alphabetic_glossary",
+      "page": 42,
+      "source_pages": [
+        42
+      ],
+      "definition": "The point about which a body or link appears to rotate at a particular instant.",
+      "engineering_relevance": "It is useful in mechanism analysis, linkages, deployable systems, and moving articulated frames.",
+      "app_solver_relevance": "The app can use instantaneous center logic in kinematic explanation mode.",
+      "id": 111
+    },
+    {
+      "term": "Internal Force",
+      "slug": "internal-force",
+      "letter": "I",
+      "source_section": "alphabetic_glossary",
+      "page": 42,
+      "source_pages": [
+        42
+      ],
+      "definition": "A force developed within a member or connection as a result of external loads, restraints, and compatibility.",
+      "engineering_relevance": "Common internal forces include axial force, shear force, bending moment, and torsion.",
+      "app_solver_relevance": "The app should output internal forces member-wise and joint-wise.",
+      "id": 112
+    },
+    {
+      "term": "Internal Hinge",
+      "slug": "internal-hinge",
+      "letter": "I",
+      "source_section": "alphabetic_glossary",
+      "page": 42,
+      "source_pages": [
+        42
+      ],
+      "definition": "A hinge located within a member span or inside the structural system rather than at an external support.",
+      "engineering_relevance": "Internal hinges release bending moment while usually transferring axial force and shear.",
+      "app_solver_relevance": "The app should split member continuity at internal hinge locations and force bending moment to zero at ideal hinges.",
+      "id": 113
+    },
+    {
+      "term": "Internal Stability",
+      "slug": "internal-stability",
+      "letter": "I",
+      "source_section": "alphabetic_glossary",
+      "page": 42,
+      "source_pages": [
+        42
+      ],
+      "definition": "The ability of the member arrangement itself to remain geometrically stable after supports and releases are considered.",
+      "engineering_relevance": "A structure can have enough external reactions but still be internally unstable if members form a mechanism.",
+      "app_solver_relevance": "The app should check both external support stability and internal member-layout stability.",
+      "id": 114
+    },
+    {
+      "term": "Isolation Joint",
+      "slug": "isolation-joint",
+      "letter": "I",
+      "source_section": "alphabetic_glossary",
+      "page": 42,
+      "source_pages": [
+        42,
+        43
+      ],
+      "definition": "A joint that separates adjacent components to prevent unwanted force transfer, cracking, vibration transfer, or restraint interaction.",
+      "engineering_relevance": "Isolation joints are used in buildings, slabs, equipment foundations, cladding, pavements, and expansion zones.",
+      "app_solver_relevance": "The app should distinguish isolation joints from load-transferring structural hinges.",
+      "id": 115
+    },
+    {
+      "term": "Iterative Solver",
+      "slug": "iterative-solver",
+      "letter": "I",
+      "source_section": "alphabetic_glossary",
+      "page": 43,
+      "source_pages": [
+        43
+      ],
+      "definition": "A numerical solution procedure that improves an approximate answer through repeated updates.",
+      "engineering_relevance": "Iterative solvers are useful in nonlinear contact, cable systems, large-displacement analysis, and semi-rigid connection calibration.",
+      "app_solver_relevance": "The app can use iterative solvers for advanced nonlinear modules.",
+      "id": 116
+    },
+    {
+      "term": "Jack",
+      "slug": "jack",
+      "letter": "J",
+      "source_section": "alphabetic_glossary",
+      "page": 44,
+      "source_pages": [
+        44
+      ],
+      "definition": "A device used to apply force, displacement, lift, rotation, or controlled adjustment to a structure.",
+      "engineering_relevance": "Jacks are used in bridge bearing replacement, prestressing, alignment correction, heavy lifting, erection, and temporary works.",
+      "app_solver_relevance": "The app can model jacking as an imposed displacement, applied force, or staged-construction input.",
+      "id": 117
+    },
+    {
+      "term": "Jacking Force",
+      "slug": "jacking-force",
+      "letter": "J",
+      "source_section": "alphabetic_glossary",
+      "page": 44,
+      "source_pages": [
+        44
+      ],
+      "definition": "The force applied by a jack during lifting, adjustment, prestressing, or structural correction.",
+      "engineering_relevance": "Incorrect jacking force can overload bearings, piers, girders, trusses, or temporary supports.",
+      "app_solver_relevance": "The app should allow jacking force as a temporary load case.",
+      "id": 118
+    },
+    {
+      "term": "Joint",
+      "slug": "joint",
+      "letter": "J",
+      "source_section": "alphabetic_glossary",
+      "page": 44,
+      "source_pages": [
+        44
+      ],
+      "definition": "A structural location where two or more members, supports, bearings, panels, cables, or mechanical components meet.",
+      "engineering_relevance": "Joint behaviour controls force transfer, rotation compatibility, movement release, stiffness, and stability.",
+      "app_solver_relevance": "The app should treat each joint as a node with assigned degrees of freedom, releases, constraints, and connection properties.",
+      "also_defined_in_core_framework_pages": [
+        9
+      ],
+      "id": 119
+    },
+    {
+      "term": "Joint Coordinate System",
+      "slug": "joint-coordinate-system",
+      "letter": "J",
+      "source_section": "alphabetic_glossary",
+      "page": 44,
+      "source_pages": [
+        44
+      ],
+      "definition": "A local coordinate system attached to a joint or connection.",
+      "engineering_relevance": "Joint coordinate systems are useful for inclined supports, guided bearings, sliding joints, hinge axes, and 3D articulation.",
+      "app_solver_relevance": "The app should allow local joint axes for advanced joint definitions.",
+      "id": 120
+    },
+    {
+      "term": "Joint Eccentricity",
+      "slug": "joint-eccentricity",
+      "letter": "J",
+      "source_section": "alphabetic_glossary",
+      "page": 44,
+      "source_pages": [
+        44,
+        45
+      ],
+      "definition": "The offset between the ideal analytical joint location and the actual line of action of connected members or fasteners.",
+      "engineering_relevance": "Joint eccentricity causes secondary moments, torsion, local plate bending, and uneven force distribution.",
+      "app_solver_relevance": "The app should flag large eccentricities and include optional secondary moment calculations.",
+      "id": 121
+    },
+    {
+      "term": "Joint Release",
+      "slug": "joint-release",
+      "letter": "J",
+      "source_section": "alphabetic_glossary",
+      "page": 45,
+      "source_pages": [
+        45
+      ],
+      "definition": "A release of one or more force or moment components at a joint.",
+      "engineering_relevance": "Joint releases are used to model pins, hinges, sliders, torsional releases, axial releases, and mechanical articulation.",
+      "app_solver_relevance": "The app should allow release selection by degree of freedom and force component.",
+      "id": 122
+    },
+    {
+      "term": "Joint Slip",
+      "slug": "joint-slip",
+      "letter": "J",
+      "source_section": "alphabetic_glossary",
+      "page": 45,
+      "source_pages": [
+        45
+      ],
+      "definition": "Relative movement at a connection due to bolt clearance, friction loss, bearing deformation, pin-hole clearance, or connection damage.",
+      "engineering_relevance": "Joint slip can alter stiffness, deflection, vibration, fatigue behaviour, and force distribution.",
+      "app_solver_relevance": "The app should include joint slip as a serviceability and inspection warning.",
+      "id": 123
+    },
+    {
+      "term": "Joint Stiffness",
+      "slug": "joint-stiffness",
+      "letter": "J",
+      "source_section": "alphabetic_glossary",
+      "page": 45,
+      "source_pages": [
+        45
+      ],
+      "definition": "The resistance of a joint to relative translation or rotation.",
+      "engineering_relevance": "Real joints are rarely perfectly pinned or perfectly fixed; many behave semi-rigidly.",
+      "app_solver_relevance": "The app should allow translational and rotational joint stiffness values.",
+      "id": 124
+    },
+    {
+      "term": "K-Factor",
+      "slug": "k-factor",
+      "letter": "K",
+      "source_section": "alphabetic_glossary",
+      "page": 47,
+      "source_pages": [
+        47
+      ],
+      "definition": "The effective length factor used to convert actual member length into effective buckling length.",
+      "engineering_relevance": "The value of K depends on end restraint, sway condition, rotational fixity, and joint stiffness. Articulated ends usually increase effective length compared with fixed ends.",
+      "app_solver_relevance": "The app should estimate K from end conditions and allow manual override for engineering judgement.",
+      "id": 125
+    },
+    {
+      "term": "K-Truss",
+      "slug": "k-truss",
+      "letter": "K",
+      "source_section": "alphabetic_glossary",
+      "page": 49,
+      "source_pages": [
+        49
+      ],
+      "definition": "A truss arrangement where diagonal members form K-shaped patterns between verticals and chords.",
+      "engineering_relevance": "K-trusses distribute shear through multiple diagonal load paths and may reduce compression length in web members.",
+      "app_solver_relevance": "The app can include K-truss as a predefined truss geometry template.",
+      "id": 126
+    },
+    {
+      "term": "Kinematic Chain",
+      "slug": "kinematic-chain",
+      "letter": "K",
+      "source_section": "alphabetic_glossary",
+      "page": 47,
+      "source_pages": [
+        47
+      ],
+      "definition": "A sequence of links connected by joints that permits controlled movement.",
+      "engineering_relevance": "Kinematic chains occur in cranes, robotic arms, scissor lifts, folding roofs, deployable shelters, movable bridges, and mechanical linkages.",
+      "app_solver_relevance": "The app should classify kinematic chains separately from ordinary load-bearing frames until they are locked, braced, or restrained.",
+      "id": 127
+    },
+    {
+      "term": "Kinematic Constraint",
+      "slug": "kinematic-constraint",
+      "letter": "K",
+      "source_section": "alphabetic_glossary",
+      "page": 47,
+      "source_pages": [
+        47
+      ],
+      "definition": "A condition that restricts or relates the motion of one or more degrees of freedom.",
+      "engineering_relevance": "Examples include hinge axes, sliders, guide rails, rigid links, pin constraints, and multi-point constraints.",
+      "app_solver_relevance": "The app should use kinematic constraints to define deployable systems, guided joints, and mechanism behaviour.",
+      "id": 128
+    },
+    {
+      "term": "Kinematic Determinacy",
+      "slug": "kinematic-determinacy",
+      "letter": "K",
+      "source_section": "alphabetic_glossary",
+      "page": 47,
+      "source_pages": [
+        47
+      ],
+      "definition": "The condition where the independent movement variables of a system are sufficient and non-redundant for describing its motion.",
+      "engineering_relevance": "A kinematically determinate system has a clear motion path without contradictory constraints.",
+      "app_solver_relevance": "The app should detect whether a mechanism has a valid movement path or is blocked by over-constraint.",
+      "id": 129
+    },
+    {
+      "term": "Kinematic Indeterminacy",
+      "slug": "kinematic-indeterminacy",
+      "letter": "K",
+      "source_section": "alphabetic_glossary",
+      "page": 48,
+      "source_pages": [
+        48
+      ],
+      "definition": "The number of independent displacement and rotation variables required to describe a structure.",
+      "engineering_relevance": "Kinematic indeterminacy is central to stiffness-method analysis because displacements are solved first.",
+      "app_solver_relevance": "The app should compute active degrees of freedom before assembling the global stiffness matrix.",
+      "id": 130
+    },
+    {
+      "term": "Kinematic Stability",
+      "slug": "kinematic-stability",
+      "letter": "K",
+      "source_section": "alphabetic_glossary",
+      "page": 48,
+      "source_pages": [
+        48
+      ],
+      "definition": "The ability of a jointed system to avoid uncontrolled motion after all releases, hinges, supports, and constraints are applied.",
+      "engineering_relevance": "A structure may be strong member-wise but unstable as a system if the joint arrangement permits mechanism motion.",
+      "app_solver_relevance": "The app should run a kinematic stability check before reporting final structural results.",
+      "id": 131
+    },
+    {
+      "term": "Kinematic System",
+      "slug": "kinematic-system",
+      "letter": "K",
+      "source_section": "alphabetic_glossary",
+      "page": 48,
+      "source_pages": [
+        48
+      ],
+      "definition": "A system designed primarily around movement rather than only load resistance.",
+      "engineering_relevance": "Deployable roofs, folding frames, robotic arms, cranes, movable bridges, and scissor mechanisms are kinematic systems.",
+      "app_solver_relevance": "The app should allow a kinematic system to be analysed in both motion mode and locked structural mode.",
+      "id": 132
+    },
+    {
+      "term": "Kinematics",
+      "slug": "kinematics",
+      "letter": "K",
+      "source_section": "alphabetic_glossary",
+      "page": 48,
+      "source_pages": [
+        48
+      ],
+      "definition": "The study of motion without directly considering the forces causing that motion.",
+      "engineering_relevance": "In articulated structures, kinematics explains how links rotate, slide, fold, expand, or lock into position.",
+      "app_solver_relevance": "The app should use kinematic logic for deployable geometry, movement envelopes, hinge paths, and collision checks.",
+      "id": 133
+    },
+    {
+      "term": "Knee Brace",
+      "slug": "knee-brace",
+      "letter": "K",
+      "source_section": "alphabetic_glossary",
+      "page": 48,
+      "source_pages": [
+        48
+      ],
+      "definition": "A short diagonal brace placed near the junction of a beam and column or rafter and column.",
+      "engineering_relevance": "Knee braces reduce effective span, improve lateral stability, and change local moment distribution.",
+      "app_solver_relevance": "The app should model knee braces as axial or frame members depending on connection detailing.",
+      "id": 134
+    },
+    {
+      "term": "Knee Joint",
+      "slug": "knee-joint",
+      "letter": "K",
+      "source_section": "alphabetic_glossary",
+      "page": 48,
+      "source_pages": [
+        48,
+        49
+      ],
+      "definition": "The joint where a column meets a rafter or beam, commonly seen in portal frames.",
+      "engineering_relevance": "The knee joint often controls frame stiffness, moment transfer, sway resistance, and connection demand.",
+      "app_solver_relevance": "The app should allow knee joints to be rigid, pinned, semi-rigid, or moment-released.",
+      "id": 135
+    },
+    {
+      "term": "Knife-Edge Support",
+      "slug": "knife-edge-support",
+      "letter": "K",
+      "source_section": "alphabetic_glossary",
+      "page": 49,
+      "source_pages": [
+        49
+      ],
+      "definition": "A support idealization where contact occurs along a narrow line, allowing rotation with negligible moment transfer.",
+      "engineering_relevance": "Knife-edge supports are common in laboratory models, theoretical mechanics, and simplified hinge support assumptions.",
+      "app_solver_relevance": "The app can include knife-edge support as a hinge-like support idealization.",
+      "id": 136
+    },
+    {
+      "term": "Knot",
+      "slug": "knot",
+      "letter": "K",
+      "source_section": "alphabetic_glossary",
+      "page": 49,
+      "source_pages": [
+        49
+      ],
+      "definition": "A connection point in a cable, net, membrane, lattice, or spatial articulated system.",
+      "engineering_relevance": "In structural geometry, a knot may behave like a node where several tension or compression paths meet.",
+      "app_solver_relevance": "The app should treat knots as nodes with force balance requirements and optional rotational freedom.",
+      "id": 137
+    },
+    {
+      "term": "Laced Member",
+      "slug": "laced-member",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 50,
+      "source_pages": [
+        50
+      ],
+      "definition": "A built-up member composed of two or more main components connected by diagonal lacing bars.",
+      "engineering_relevance": "Laced members are used in towers, bridges, trusses, and compression members where a single solid section may be inefficient.",
+      "app_solver_relevance": "The app should classify laced members as built-up compression or tension members with additional local stability checks.",
+      "id": 138
+    },
+    {
+      "term": "Lacing",
+      "slug": "lacing",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 50,
+      "source_pages": [
+        50
+      ],
+      "definition": "A system of diagonal connecting bars used to tie together parts of a built-up member.",
+      "engineering_relevance": "Lacing improves composite action and controls relative movement between member components.",
+      "app_solver_relevance": "The app can include lacing as a detailing note in advanced member definition.",
+      "id": 139
+    },
+    {
+      "term": "Lateral Bracing",
+      "slug": "lateral-bracing",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 50,
+      "source_pages": [
+        50
+      ],
+      "definition": "A system that restrains sideways displacement or twisting of a main member.",
+      "engineering_relevance": "Lateral bracing is essential for beams, rafters, arches, towers, crane booms, compression chords, and frame systems.",
+      "app_solver_relevance": "The app should flag missing lateral bracing where lateral-torsional buckling or sway instability may occur.",
+      "id": 140
+    },
+    {
+      "term": "Lateral Load",
+      "slug": "lateral-load",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 50,
+      "source_pages": [
+        50
+      ],
+      "definition": "A load acting horizontally or transverse to the primary gravity direction.",
+      "engineering_relevance": "Wind, earthquake, braking, crane surge, soil pressure, water pressure, and impact are common lateral loads.",
+      "app_solver_relevance": "The app should support lateral load cases and combine them with gravity and imposed displacement cases.",
+      "id": 141
+    },
+    {
+      "term": "Lateral Restraint",
+      "slug": "lateral-restraint",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 50,
+      "source_pages": [
+        50,
+        51
+      ],
+      "definition": "A restraint that prevents sideways movement of a member, joint, support, or system.",
+      "engineering_relevance": "Lateral restraint improves stability and reduces buckling risk.",
+      "app_solver_relevance": "The app should allow users to assign lateral restraint at nodes, member points, supports, and bracing locations.",
+      "id": 142
+    },
+    {
+      "term": "Lateral Sway",
+      "slug": "lateral-sway",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 51,
+      "source_pages": [
+        51
+      ],
+      "definition": "Sideways movement of a frame, column line, tower, support, or articulated system.",
+      "engineering_relevance": "Sway is important in portal frames, crane frames, tall structures, bridge piers, seismic systems, and lightly braced mechanisms.",
+      "app_solver_relevance": "The app should classify a structure as sway or non-sway where relevant.",
+      "id": 143
+    },
+    {
+      "term": "Lateral-Torsional Buckling",
+      "slug": "lateral-torsional-buckling",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 51,
+      "source_pages": [
+        51
+      ],
+      "definition": "Instability of a bending member involving lateral displacement and twisting.",
+      "engineering_relevance": "It commonly affects long unbraced beams, crane girders, rafters, bridge girders, and slender flexural members.",
+      "app_solver_relevance": "The app should warn when a bending member has large unbraced length and insufficient lateral restraint.",
+      "id": 144
+    },
+    {
+      "term": "Launching Girder",
+      "slug": "launching-girder",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 51,
+      "source_pages": [
+        51
+      ],
+      "definition": "A temporary or semi-temporary structural system used to erect bridge segments, precast girders, or long-span components.",
+      "engineering_relevance": "Launching girders contain articulated supports, moving bearings, temporary reactions, and staged load paths.",
+      "app_solver_relevance": "The app can include launching-girder logic under staged construction and temporary works.",
+      "id": 145
+    },
+    {
+      "term": "Lever Arm",
+      "slug": "lever-arm",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 51,
+      "source_pages": [
+        51
+      ],
+      "definition": "The perpendicular distance between a force line of action and a reference point or axis.",
+      "engineering_relevance": "Lever arm controls moment magnitude and is important in pins, brackets, cranes, eccentric supports, and overturning checks.",
+      "app_solver_relevance": "The app should calculate moment as force multiplied by lever arm where relevant.",
+      "id": 146
+    },
+    {
+      "term": "Lift-Off",
+      "slug": "lift-off",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 51,
+      "source_pages": [
+        51
+      ],
+      "definition": "Loss of contact between a support and the supported structure.",
+      "engineering_relevance": "Lift-off may occur in rocking systems, uplift-sensitive bearings, base plates, bridge decks, and compression-only supports.",
+      "app_solver_relevance": "The app should detect lift-off when support reaction becomes tensile in a compression-only support.",
+      "id": 147
+    },
+    {
+      "term": "Limit State",
+      "slug": "limit-state",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 52,
+      "source_pages": [
+        52
+      ],
+      "definition": "A condition beyond which a structure no longer satisfies a design requirement.",
+      "engineering_relevance": "Limit states include strength failure, instability, excessive deflection, excessive vibration, fatigue, serviceability failure, and collapse.",
+      "app_solver_relevance": "The app should separate serviceability warnings from ultimate safety warnings.",
+      "id": 148
+    },
+    {
+      "term": "Linear Elastic Analysis",
+      "slug": "linear-elastic-analysis",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 52,
+      "source_pages": [
+        52
+      ],
+      "definition": "Analysis assuming material stress is proportional to strain and geometry changes are small.",
+      "engineering_relevance": "It is the usual first analysis stage for beams, frames, trusses, and articulated structures.",
+      "app_solver_relevance": "The app should use linear elastic analysis as the default mode before advanced nonlinear options.",
+      "id": 149
+    },
+    {
+      "term": "Linear Spring",
+      "slug": "linear-spring",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 52,
+      "source_pages": [
+        52
+      ],
+      "definition": "A spring where force is proportional to displacement.",
+      "engineering_relevance": "Linear springs represent elastic supports, soil stiffness, bearing stiffness, joint slip stiffness, and flexible restraints.",
+      "app_solver_relevance": "The app should use R = k∆for translational spring elements.",
+      "id": 150
+    },
+    {
+      "term": "Link",
+      "slug": "link",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 52,
+      "source_pages": [
+        52
+      ],
+      "definition": "A member connecting two joints, often transmitting axial force, motion, or constraint.",
+      "engineering_relevance": "Links appear in trusses, cranes, scissor mechanisms, foldable frames, robotic arms, and deployable systems.",
+      "app_solver_relevance": "The app should classify links as axial-only, beam-like, rigid, flexible, or mechanism links.",
+      "id": 151
+    },
+    {
+      "term": "Linkage",
+      "slug": "linkage",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 52,
+      "source_pages": [
+        52
+      ],
+      "definition": "An assembly of links connected by joints to transmit motion, force, or displacement.",
+      "engineering_relevance": "Linkages may be mechanical, structural, deployable, or hybrid.",
+      "app_solver_relevance": "The app should include linkage templates for motion simulation and locked structural analysis.",
+      "id": 152
+    },
+    {
+      "term": "Live Load",
+      "slug": "live-load",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 52,
+      "source_pages": [
+        52
+      ],
+      "definition": "Variable load caused by occupancy, people, vehicles, equipment, storage, traffic, construction activity, or movable objects.",
+      "engineering_relevance": "Live load changes in position or magnitude and may govern serviceability or strength.",
+      "app_solver_relevance": "The app should allow live-load cases and future code-based load combinations.",
+      "id": 153
+    },
+    {
+      "term": "Load Case",
+      "slug": "load-case",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 53,
+      "source_pages": [
+        53
+      ],
+      "definition": "A defined scenario of applied loading, support movement, temperature change, or construction stage.",
+      "engineering_relevance": "Different load cases may produce different critical reactions, moments, deflections, and stability conditions.",
+      "app_solver_relevance": "The app should manage multiple load cases and compare critical outputs.",
+      "id": 154
+    },
+    {
+      "term": "Load Combination",
+      "slug": "load-combination",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 53,
+      "source_pages": [
+        53
+      ],
+      "definition": "A rule-based combination of multiple load cases for design or assessment.",
+      "engineering_relevance": "Load combinations are used to evaluate safety, serviceability, and extreme event behaviour.",
+      "app_solver_relevance": "The app should initially allow custom combinations and later support code-based combinations.",
+      "id": 155
+    },
+    {
+      "term": "Load Path",
+      "slug": "load-path",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 53,
+      "source_pages": [
+        53
+      ],
+      "definition": "The route by which force travels through members, joints, bearings, supports, and foundations.",
+      "engineering_relevance": "In articulated structures, the load path may shift from bending action to axial action or from fixed restraint to controlled movement.",
+      "app_solver_relevance": "The app should generate a plain-language load-path explanation after solving.",
+      "also_defined_in_core_framework_pages": [
+        12
+      ],
+      "id": 156
+    },
+    {
+      "term": "Local Axis",
+      "slug": "local-axis",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 53,
+      "source_pages": [
+        53
+      ],
+      "definition": "The coordinate direction attached to a member, joint, bearing, or support.",
+      "engineering_relevance": "Local axes are used to define releases, member forces, guide directions, hinge axes, and support stiffness.",
+      "app_solver_relevance": "The app should allow local-axis orientation and transform results into global axes.",
+      "id": 157
+    },
+    {
+      "term": "Local Buckling",
+      "slug": "local-buckling",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 53,
+      "source_pages": [
+        53
+      ],
+      "definition": "Buckling of a plate, flange, web, shell segment, gusset, or other local component.",
+      "engineering_relevance": "Thin-walled members and built-up steel components may fail locally before the whole member buckles.",
+      "app_solver_relevance": "The app should include local-buckling notes for slender sections and gusset details.",
+      "id": 158
+    },
+    {
+      "term": "Local Coordinate System",
+      "slug": "local-coordinate-system",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 53,
+      "source_pages": [
+        53
+      ],
+      "definition": "A coordinate system attached to an individual member or connection rather than the whole structure.",
+      "engineering_relevance": "It simplifies member stiffness, end releases, hinge-axis definition, and force output.",
+      "app_solver_relevance": "The app should compute internally in local axes and report both local and global results.",
+      "id": 159
+    },
+    {
+      "term": "Locked Configuration",
+      "slug": "locked-configuration",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 54,
+      "source_pages": [
+        54
+      ],
+      "definition": "The final restrained configuration of a deployable or movable structure after deployment.",
+      "engineering_relevance": "A mechanism may become a stable structure only after locking, bracing, or support engagement.",
+      "app_solver_relevance": "The app should require locked/unlocked state definition for deployable structures.",
+      "id": 160
+    },
+    {
+      "term": "Locking Device",
+      "slug": "locking-device",
+      "letter": "L",
+      "source_section": "alphabetic_glossary",
+      "page": 54,
+      "source_pages": [
+        54
+      ],
+      "definition": "A component that prevents further movement after a deployable or movable structure reaches its intended position.",
+      "engineering_relevance": "Locking devices convert a moving mechanism into a stable load-bearing system.",
+      "app_solver_relevance": "The app should include locking devices as constraints activated in the final structural analysis stage.",
+      "id": 161
+    },
+    {
+      "term": "Main Member",
+      "slug": "main-member",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 55,
+      "source_pages": [
+        55
+      ],
+      "definition": "A primary load-carrying member in a structural system.",
+      "engineering_relevance": "Main members include beams, columns, chords, arch ribs, crane booms, bridge girders, and major truss elements.",
+      "app_solver_relevance": "The app should distinguish main members from secondary bracing and connection elements.",
+      "id": 162
+    },
+    {
+      "term": "Matrix Stiffness Method",
+      "slug": "matrix-stiffness-method",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 55,
+      "source_pages": [
+        55
+      ],
+      "definition": "A displacement-based structural analysis method where element stiffness matrices are assembled into a global stiffness matrix.",
+      "engineering_relevance": "It is the computational basis of many structural analysis programs.",
+      "app_solver_relevance": "The app should use matrix stiffness logic for beams, frames, trusses, springs, semi-rigid joints, and released members.",
+      "id": 163
+    },
+    {
+      "term": "Mechanism",
+      "slug": "mechanism",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 55,
+      "source_pages": [
+        55
+      ],
+      "definition": "A system or part of a system that can move because it has insufficient restraints or intentional kinematic freedom.",
+      "engineering_relevance": "Mechanisms are useful in deployable structures but dangerous in load-bearing structures unless stabilized or locked.",
+      "app_solver_relevance": "The app should distinguish accidental mechanisms from intentional deployable mechanisms.",
+      "also_defined_in_core_framework_pages": [
+        14
+      ],
+      "id": 164
+    },
+    {
+      "term": "Member",
+      "slug": "member",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 55,
+      "source_pages": [
+        55
+      ],
+      "definition": "A structural component connecting two or more nodes or joints.",
+      "engineering_relevance": "Members may act as beams, columns, bars, links, ties, struts, cables, braces, tendons, hangers, or arch ribs.",
+      "app_solver_relevance": "The app should assign every member a type, section, material, stiffness, connectivity, and release condition.",
+      "id": 165
+    },
+    {
+      "term": "Member Axis",
+      "slug": "member-axis",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 55,
+      "source_pages": [
+        55,
+        56
+      ],
+      "definition": "The reference line along the length of a structural member.",
+      "engineering_relevance": "Forces, eccentricities, releases, and deformations are often measured relative to the member axis.",
+      "app_solver_relevance": "The app should draw member axes clearly and allow offset or eccentric connections.",
+      "id": 166
+    },
+    {
+      "term": "Member End Force",
+      "slug": "member-end-force",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 56,
+      "source_pages": [
+        56
+      ],
+      "definition": "The force or moment component acting at the end of a member.",
+      "engineering_relevance": "Member end forces include axial force, shear force, bending moment, and torsion depending on model dimension.",
+      "app_solver_relevance": "The app should report member end forces in both local and global coordinate systems.",
+      "id": 167
+    },
+    {
+      "term": "Member End Release",
+      "slug": "member-end-release",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 56,
+      "source_pages": [
+        56
+      ],
+      "definition": "A release applied at a member end to prevent transfer of a selected force or moment component.",
+      "engineering_relevance": "Moment releases are common for pin-ended members; axial and shear releases require careful use.",
+      "app_solver_relevance": "The app should warn when end releases produce instability or disconnected force paths.",
+      "id": 168
+    },
+    {
+      "term": "Member Force",
+      "slug": "member-force",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 56,
+      "source_pages": [
+        56
+      ],
+      "definition": "The internal force result within a structural member.",
+      "engineering_relevance": "Member force may include axial force, shear force, bending moment, and torsion.",
+      "app_solver_relevance": "The app should output member forces as diagrams, tables, and sign-classified results.",
+      "id": 169
+    },
+    {
+      "term": "Membrane Action",
+      "slug": "membrane-action",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 56,
+      "source_pages": [
+        56
+      ],
+      "definition": "Load resistance through in-plane tension or compression rather than bending.",
+      "engineering_relevance": "Membrane action occurs in fabric structures, shells, slabs, plates, roofs, and tensioned systems.",
+      "app_solver_relevance": "The app can include membrane action as a future extension beyond beam-frame-truss modelling.",
+      "id": 170
+    },
+    {
+      "term": "Midspan Hinge",
+      "slug": "midspan-hinge",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 56,
+      "source_pages": [
+        56
+      ],
+      "definition": "An internal hinge placed near the middle of a span.",
+      "engineering_relevance": "Midspan hinges may be used in Gerber beams, suspended spans, and determinate beam systems.",
+      "app_solver_relevance": "The app should allow users to place internal hinges at arbitrary member locations.",
+      "id": 171
+    },
+    {
+      "term": "Modal Behaviour",
+      "slug": "modal-behaviour",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 56,
+      "source_pages": [
+        56
+      ],
+      "definition": "The natural vibration pattern of a structure.",
+      "engineering_relevance": "Articulated structures may have low-frequency modes if joints are flexible or restraints are weak.",
+      "app_solver_relevance": "The app can include modal behaviour in a future dynamic analysis module.",
+      "id": 172
+    },
+    {
+      "term": "Moment",
+      "slug": "moment",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 57,
+      "source_pages": [
+        57
+      ],
+      "definition": "The rotational effect of a force about a point or axis.",
+      "engineering_relevance": "Moments create bending, overturning, twisting, and rotational demand at supports and joints.",
+      "app_solver_relevance": "The app should compute support moments, member end moments, bending moment diagrams, and released moments.",
+      "id": 173
+    },
+    {
+      "term": "Moment Connection",
+      "slug": "moment-connection",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 57,
+      "source_pages": [
+        57
+      ],
+      "definition": "A connection designed to transfer bending moment between connected members.",
+      "engineering_relevance": "Moment connections create continuity and stiffness but may attract thermal, settlement, and compatibility forces.",
+      "app_solver_relevance": "The app should classify moment connections as fixed, semi-rigid, or nonlinear moment-rotation connections.",
+      "id": 174
+    },
+    {
+      "term": "Moment Distribution",
+      "slug": "moment-distribution",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 57,
+      "source_pages": [
+        57
+      ],
+      "definition": "The spread of bending moment through a structure according to loading, stiffness, continuity, and releases.",
+      "engineering_relevance": "Hinges interrupt moment continuity; semi-rigid joints partially redistribute moment.",
+      "app_solver_relevance": "The app should visualize how moment changes when a user changes joint type.",
+      "id": 175
+    },
+    {
+      "term": "Moment Frame",
+      "slug": "moment-frame",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 57,
+      "source_pages": [
+        57
+      ],
+      "definition": "A frame system in which lateral resistance is provided mainly by moment-resisting joints.",
+      "engineering_relevance": "Moment frames depend on beam-column joint stiffness and ductility.",
+      "app_solver_relevance": "The app should classify moment frames separately from braced frames and pin-jointed trusses.",
+      "id": 176
+    },
+    {
+      "term": "Moment Release",
+      "slug": "moment-release",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 57,
+      "source_pages": [
+        57
+      ],
+      "definition": "A modelling condition where bending moment transfer is removed at a member end, joint, or internal point.",
+      "engineering_relevance": "Moment releases represent pins, hinges, bearing rotations, or flexible connections.",
+      "app_solver_relevance": "The app should show zero bending moment at ideal moment releases and rerun stability checks after every release change.",
+      "id": 177
+    },
+    {
+      "term": "Moment-Rotation Relationship",
+      "slug": "moment-rotation-relationship",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 57,
+      "source_pages": [
+        57
+      ],
+      "definition": "The relationship between bending moment and joint rotation.",
+      "engineering_relevance": "A perfectly pinned joint has nearly zero moment resistance, a fixed joint has very high rotational stiffness, and a semi-rigid joint lies between them.",
+      "app_solver_relevance": "The app should support linear M = kθθ first and later nonlinear moment-rotation curves.",
+      "id": 178
+    },
+    {
+      "term": "Moving Load",
+      "slug": "moving-load",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 58,
+      "source_pages": [
+        58
+      ],
+      "definition": "A load whose position changes along a structure.",
+      "engineering_relevance": "Moving loads are important for bridges, cranes, rails, gantries, vehicles, conveyors, and construction equipment.",
+      "app_solver_relevance": "The app should include moving-load envelopes and influence-line support in advanced mode.",
+      "id": 179
+    },
+    {
+      "term": "Multi-Point Constraint",
+      "slug": "multi-point-constraint",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 58,
+      "source_pages": [
+        58
+      ],
+      "definition": "A constraint equation linking displacement or rotation values at multiple nodes.",
+      "engineering_relevance": "Multi-point constraints are used for rigid links, diaphragm action, tied nodes, guided motion, symmetry, and mechanism relationships.",
+      "app_solver_relevance": "The app should use multi-point constraints for advanced articulated and kinematic models.",
+      "id": 180
+    },
+    {
+      "term": "Multi-Span Beam",
+      "slug": "multi-span-beam",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 58,
+      "source_pages": [
+        58
+      ],
+      "definition": "A beam continuous over more than one span.",
+      "engineering_relevance": "Multi-span beams may be continuous, articulated, Gerber-type, bearing-supported, or settlement-sensitive.",
+      "app_solver_relevance": "The app should support internal supports, hinges, releases, and span-wise diagrams.",
+      "id": 181
+    },
+    {
+      "term": "Mutable Geometry",
+      "slug": "mutable-geometry",
+      "letter": "M",
+      "source_section": "alphabetic_glossary",
+      "page": 58,
+      "source_pages": [
+        58
+      ],
+      "definition": "A geometry that can change configuration during deployment, loading, actuation, or staged construction.",
+      "engineering_relevance": "Mutable geometry is central to deployable structures, moving bridges, cranes, scissor systems, and adaptive structures.",
+      "app_solver_relevance": "The app should treat mutable geometry as a separate modelling mode from fixed structural geometry.",
+      "id": 182
+    },
+    {
+      "term": "Natural Frequency",
+      "slug": "natural-frequency",
+      "letter": "N",
+      "source_section": "alphabetic_glossary",
+      "page": 59,
+      "source_pages": [
+        59
+      ],
+      "definition": "The frequency at which a structure tends to vibrate freely after being disturbed.",
+      "engineering_relevance": "Articulated systems with flexible joints, cables, bearings, or light members may have low natural frequencies and vibration sensitivity.",
+      "app_solver_relevance": "The app can include natural frequency as a future dynamic-analysis output.",
+      "id": 183
+    },
+    {
+      "term": "Near-Singular System",
+      "slug": "near-singular-system",
+      "letter": "N",
+      "source_section": "alphabetic_glossary",
+      "page": 59,
+      "source_pages": [
+        59
+      ],
+      "definition": "A structural model whose stiffness matrix is almost singular because restraints are weak, releases are excessive, or geometry is close to mechanism behaviour.",
+      "engineering_relevance": "Near-singular systems may produce very large displacements or unreliable numerical results.",
+      "app_solver_relevance": "The app should warn users when the stiffness matrix has poor conditioning.",
+      "id": 184
+    },
+    {
+      "term": "Neutral Axis",
+      "slug": "neutral-axis",
+      "letter": "N",
+      "source_section": "alphabetic_glossary",
+      "page": 59,
+      "source_pages": [
+        59
+      ],
+      "definition": "The axis in a bending member where normal stress is zero under pure bending.",
+      "engineering_relevance": "Neutral-axis position affects bending stress, curvature, cracking, and composite action.",
+      "app_solver_relevance": "The app can use neutral-axis logic in future section-stress and design-check modules.",
+      "id": 185
+    },
+    {
+      "term": "Nodal Displacement",
+      "slug": "nodal-displacement",
+      "letter": "N",
+      "source_section": "alphabetic_glossary",
+      "page": 59,
+      "source_pages": [
+        59,
+        60
+      ],
+      "definition": "The translation or rotation calculated at a node.",
+      "engineering_relevance": "Nodal displacements are primary unknowns in matrix stiffness analysis.",
+      "app_solver_relevance": "The app should output nodal displacement tables and deformed-shape plots.",
+      "id": 186
+    },
+    {
+      "term": "Nodal Load",
+      "slug": "nodal-load",
+      "letter": "N",
+      "source_section": "alphabetic_glossary",
+      "page": 60,
+      "source_pages": [
+        60
+      ],
+      "definition": "A load applied directly at a node rather than along a member.",
+      "engineering_relevance": "Nodal loads are useful for joint loads, point masses, actuator forces, cable forces, and idealized external actions.",
+      "app_solver_relevance": "The app should allow nodal force and nodal moment input.",
+      "id": 187
+    },
+    {
+      "term": "Node",
+      "slug": "node",
+      "letter": "N",
+      "source_section": "alphabetic_glossary",
+      "page": 59,
+      "source_pages": [
+        59
+      ],
+      "definition": "A modelling point where members, supports, loads, springs, constraints, or joints are connected.",
+      "engineering_relevance": "Nodes are the computational equivalent of joints in structural analysis.",
+      "app_solver_relevance": "The app should assign coordinates, degrees of freedom, restraints, loads, and joint properties to every node.",
+      "id": 188
+    },
+    {
+      "term": "Non-Sway Frame",
+      "slug": "non-sway-frame",
+      "letter": "N",
+      "source_section": "alphabetic_glossary",
+      "page": 60,
+      "source_pages": [
+        60
+      ],
+      "definition": "A frame whose lateral translation is restrained by bracing, walls, supports, or other stabilizing systems.",
+      "engineering_relevance": "Non-sway behaviour reduces second-order effects and changes column effective length.",
+      "app_solver_relevance": "The app should classify frames as sway or non-sway for stability notes.",
+      "id": 189
+    },
+    {
+      "term": "Nonlinear Analysis",
+      "slug": "nonlinear-analysis",
+      "letter": "N",
+      "source_section": "alphabetic_glossary",
+      "page": 60,
+      "source_pages": [
+        60
+      ],
+      "definition": "Analysis where the relationship between load and response is not proportional.",
+      "engineering_relevance": "Nonlinearity may arise from large displacement, material yielding, contact, uplift, cable sag, friction, or joint slip.",
+      "app_solver_relevance": "The app should separate linear default analysis from advanced nonlinear analysis modes.",
+      "id": 190
+    },
+    {
+      "term": "Numerical Stability",
+      "slug": "numerical-stability",
+      "letter": "N",
+      "source_section": "alphabetic_glossary",
+      "page": 60,
+      "source_pages": [
+        60
+      ],
+      "definition": "The ability of a computational solution to remain reliable and well-conditioned.",
+      "engineering_relevance": "Bad scaling, weak springs, excessive releases, duplicate constraints, and mechanism modes can reduce numerical stability.",
+      "app_solver_relevance": "The app should provide solver health warnings rather than only error messages.",
+      "id": 191
+    },
+    {
+      "term": "Offset Connection",
+      "slug": "offset-connection",
+      "letter": "O",
+      "source_section": "alphabetic_glossary",
+      "page": 61,
+      "source_pages": [
+        61
+      ],
+      "definition": "A connection where the physical member line does not pass exactly through the ideal analytical joint.",
+      "engineering_relevance": "Offsets create eccentricity, secondary bending, torsion, and local connection demand.",
+      "app_solver_relevance": "The app should allow connection offsets and warn when the idealized model ignores significant eccentricity.",
+      "id": 192
+    },
+    {
+      "term": "Ovalization",
+      "slug": "ovalization",
+      "letter": "O",
+      "source_section": "alphabetic_glossary",
+      "page": 61,
+      "source_pages": [
+        61,
+        62
+      ],
+      "definition": "Elongation or distortion of a circular hole, tube, shell, or pin connection under repeated or high bearing stress.",
+      "engineering_relevance": "Ovalized pin holes can increase joint slip, reduce stiffness, and accelerate fatigue damage.",
+      "app_solver_relevance": "The app can include ovalization as an inspection defect term for pin-connected structures.",
+      "id": 193
+    },
+    {
+      "term": "Over-Constrained System",
+      "slug": "over-constrained-system",
+      "letter": "O",
+      "source_section": "alphabetic_glossary",
+      "page": 61,
+      "source_pages": [
+        61
+      ],
+      "definition": "A system with more restraints than necessary, possibly causing locked-in forces from temperature, settlement, shrinkage, or construction tolerance.",
+      "engineering_relevance": "Over-constraint is not always unsafe, but it can create unintended internal forces.",
+      "app_solver_relevance": "The app should flag duplicate or conflicting restraints.",
+      "id": 194
+    },
+    {
+      "term": "Over-Release",
+      "slug": "over-release",
+      "letter": "O",
+      "source_section": "alphabetic_glossary",
+      "page": 61,
+      "source_pages": [
+        61
+      ],
+      "definition": "A modelling condition where too many force or moment components are released.",
+      "engineering_relevance": "Over-release can convert a stable structure into a mechanism.",
+      "app_solver_relevance": "The app should automatically run stability checks after every release assignment.",
+      "id": 195
+    },
+    {
+      "term": "Overturning Moment",
+      "slug": "overturning-moment",
+      "letter": "O",
+      "source_section": "alphabetic_glossary",
+      "page": 61,
+      "source_pages": [
+        61
+      ],
+      "definition": "A moment that tends to rotate or topple a structure, support, foundation, crane, frame, or wall.",
+      "engineering_relevance": "Overturning is important in cranes, retaining systems, towers, portal frames, bridge piers, and base-isolated systems.",
+      "app_solver_relevance": "The app should include overturning checks for support reactions and lateral load cases.",
+      "id": 196
+    },
+    {
+      "term": "Panel Point",
+      "slug": "panel-point",
+      "letter": "P",
+      "source_section": "alphabetic_glossary",
+      "page": 63,
+      "source_pages": [
+        63
+      ],
+      "definition": "A joint location in a truss or framed system where members meet and loads are ideally applied.",
+      "engineering_relevance": "Applying loads at panel points helps maintain axial-force behaviour in ideal truss members.",
+      "app_solver_relevance": "The app should identify panel points and warn when loads are applied between them in axial-only truss models.",
+      "id": 197
+    },
+    {
+      "term": "Partial Fixity",
+      "slug": "partial-fixity",
+      "letter": "P",
+      "source_section": "alphabetic_glossary",
+      "page": 63,
+      "source_pages": [
+        63
+      ],
+      "definition": "A condition where a connection transfers some moment but is not perfectly rigid.",
+      "engineering_relevance": "Partial fixity is common in real bolted, welded, bearing, timber, and precast connections.",
+      "app_solver_relevance": "The app should model partial fixity using rotational stiffness or moment-rotation curves.",
+      "id": 198
+    },
+    {
+      "term": "Partial Release",
+      "slug": "partial-release",
+      "letter": "P",
+      "source_section": "alphabetic_glossary",
+      "page": 63,
+      "source_pages": [
+        63
+      ],
+      "definition": "A release condition between fully fixed and fully free.",
+      "engineering_relevance": "A partially released joint has finite stiffness and transfers limited force or moment.",
+      "app_solver_relevance": "The app should support partial releases through spring stiffness values.",
+      "id": 199
+    },
+    {
+      "term": "Pin Bearing",
+      "slug": "pin-bearing",
+      "letter": "P",
+      "source_section": "alphabetic_glossary",
+      "page": 64,
+      "source_pages": [
+        64
+      ],
+      "definition": "The local compressive contact stress between a pin and the plate or lug hole around it.",
+      "engineering_relevance": "Pin bearing controls local crushing, ovalization, wear, and fatigue in articulated joints.",
+      "app_solver_relevance": "The app can include pin-bearing checks in a connection-design extension.",
+      "id": 200
+    },
+    {
+      "term": "Pin Connection",
+      "slug": "pin-connection",
+      "letter": "P",
+      "source_section": "alphabetic_glossary",
+      "page": 64,
+      "source_pages": [
+        64
+      ],
+      "definition": "A physical connection where a pin passes through aligned holes to permit rotation.",
+      "engineering_relevance": "Pin connections appear in trusses, cranes, tie rods, clevises, linkages, and bridge components.",
+      "app_solver_relevance": "The app should classify pin connections as articulated joints and include pin force output.",
+      "id": 201
+    },
+    {
+      "term": "Pinned Joint",
+      "slug": "pinned-joint",
+      "letter": "P",
+      "source_section": "alphabetic_glossary",
+      "page": 63,
+      "source_pages": [
+        63
+      ],
+      "definition": "A joint that transfers force while allowing rotation and ideally transferring no bending moment.",
+      "engineering_relevance": "Pinned joints are used in trusses, cranes, linkages, arches, brackets, temporary works, and articulated frames.",
+      "app_solver_relevance": "The app should model pinned joints as rotational releases with selected force transfer preserved.",
+      "id": 202
+    },
+    {
+      "term": "Pinned Support",
+      "slug": "pinned-support",
+      "letter": "P",
+      "source_section": "alphabetic_glossary",
+      "page": 63,
+      "source_pages": [
+        63,
+        64
+      ],
+      "definition": "A support that restrains translation but allows rotation.",
+      "engineering_relevance": "In a 2D model, a pinned support usually provides horizontal and vertical reactions but no moment reaction.",
+      "app_solver_relevance": "The app should assign translational restraints and release rotational restraint for pinned supports.",
+      "id": 203
+    },
+    {
+      "term": "Plastic Hinge",
+      "slug": "plastic-hinge",
+      "letter": "P",
+      "source_section": "alphabetic_glossary",
+      "page": 64,
+      "source_pages": [
+        64
+      ],
+      "definition": "A localized region where a member reaches plastic moment capacity and rotates with limited increase in moment.",
+      "engineering_relevance": "Plastic hinges are important in collapse mechanisms, seismic design, ductility, and ultimate limit analysis.",
+      "app_solver_relevance": "The app can include plastic hinge logic in an advanced nonlinear or collapse-mode module.",
+      "id": 204
+    },
+    {
+      "term": "Portal Frame",
+      "slug": "portal-frame",
+      "letter": "P",
+      "source_section": "alphabetic_glossary",
+      "page": 64,
+      "source_pages": [
+        64
+      ],
+      "definition": "A frame with columns and rafters or beams, commonly used in industrial buildings, sheds, warehouses, and halls.",
+      "engineering_relevance": "Portal frames may have pinned bases, fixed bases, rigid knees, semi-rigid joints, or ridge hinges.",
+      "app_solver_relevance": "The app should include portal-frame templates with selectable base and knee joint conditions.",
+      "id": 205
+    },
+    {
+      "term": "Pot Bearing",
+      "slug": "pot-bearing",
+      "letter": "P",
+      "source_section": "alphabetic_glossary",
+      "page": 64,
+      "source_pages": [
+        64
+      ],
+      "definition": "A bridge bearing where elastomer is confined within a steel pot, allowing high vertical load and controlled rotation.",
+      "engineering_relevance": "Pot bearings are used where heavy loads and rotational capacity are required.",
+      "app_solver_relevance": "The app should classify pot bearings under bridge-bearing support types.",
+      "id": 206
+    },
+    {
+      "term": "Prestress",
+      "slug": "prestress",
+      "letter": "P",
+      "source_section": "alphabetic_glossary",
+      "page": 65,
+      "source_pages": [
+        65
+      ],
+      "definition": "A deliberate internal force introduced before service loading, usually through tendons, jacks, or tensioning devices.",
+      "engineering_relevance": "Prestress can control deflection, cracking, uplift, cable sag, and structural stiffness.",
+      "app_solver_relevance": "The app should allow prestress as an initial load or member force input.",
+      "id": 207
+    },
+    {
+      "term": "Primary Member",
+      "slug": "primary-member",
+      "letter": "P",
+      "source_section": "alphabetic_glossary",
+      "page": 65,
+      "source_pages": [
+        65
+      ],
+      "definition": "A main load-carrying component of a structure.",
+      "engineering_relevance": "Primary members form the essential load path from applied loads to supports.",
+      "app_solver_relevance": "The app should distinguish primary members from secondary bracing, cladding supports, and detailing elements.",
+      "id": 208
+    },
+    {
+      "term": "Prying Action",
+      "slug": "prying-action",
+      "letter": "P",
+      "source_section": "alphabetic_glossary",
+      "page": 65,
+      "source_pages": [
+        65
+      ],
+      "definition": "Additional force in bolts, pins, or fasteners caused by deformation of connected plates.",
+      "engineering_relevance": "Prying action can significantly increase fastener tension beyond direct load estimates.",
+      "app_solver_relevance": "The app can include prying action as a connection warning in detailed design mode.",
+      "id": 209
+    },
+    {
+      "term": "Quadrilateral Mechanism",
+      "slug": "quadrilateral-mechanism",
+      "letter": "Q",
+      "source_section": "alphabetic_glossary",
+      "page": 66,
+      "source_pages": [
+        66
+      ],
+      "definition": "A four-link mechanism that can change shape unless braced, triangulated, or otherwise restrained.",
+      "engineering_relevance": "Unbraced rectangular frames may behave like quadrilateral mechanisms when joints are pinned.",
+      "app_solver_relevance": "The app should warn when a quadrilateral bay lacks diagonal bracing or moment-resisting joints.",
+      "id": 210
+    },
+    {
+      "term": "Quasi-Static Load",
+      "slug": "quasi-static-load",
+      "letter": "Q",
+      "source_section": "alphabetic_glossary",
+      "page": 66,
+      "source_pages": [
+        66
+      ],
+      "definition": "A load applied slowly enough that inertial effects are small.",
+      "engineering_relevance": "Many structural loads are treated as quasi-static even if they vary gradually over time.",
+      "app_solver_relevance": "The app should use quasi-static assumptions in default linear analysis while warning for impact or vibration-sensitive cases.",
+      "id": 211
+    },
+    {
+      "term": "Reaction",
+      "slug": "reaction",
+      "letter": "R",
+      "source_section": "alphabetic_glossary",
+      "page": 67,
+      "source_pages": [
+        67
+      ],
+      "definition": "A force or moment developed at a support, bearing, spring, or restraint in response to applied loads and imposed movements.",
+      "engineering_relevance": "Reaction components depend on the support type and released degrees of freedom.",
+      "app_solver_relevance": "The app should report reactions according to each support’s actual restraints.",
+      "also_defined_in_core_framework_pages": [
+        12
+      ],
+      "id": 212
+    },
+    {
+      "term": "Redundancy",
+      "slug": "redundancy",
+      "letter": "R",
+      "source_section": "alphabetic_glossary",
+      "page": 67,
+      "source_pages": [
+        67
+      ],
+      "definition": "Extra restraint or alternative load path beyond the minimum required for stability.",
+      "engineering_relevance": "Redundancy improves robustness but also introduces compatibility forces and indeterminacy.",
+      "app_solver_relevance": "The app should identify redundant restraints and explain their effect on analysis method.",
+      "id": 213
+    },
+    {
+      "term": "Release",
+      "slug": "release",
+      "letter": "R",
+      "source_section": "alphabetic_glossary",
+      "page": 67,
+      "source_pages": [
+        67
+      ],
+      "definition": "A modelling condition that removes or reduces transfer of a selected force or moment component.",
+      "engineering_relevance": "Releases are used to represent hinges, pins, sliders, torsional freedoms, axial freedoms, and semi-rigid behaviour.",
+      "app_solver_relevance": "The app should make releases visible in diagrams and rerun stability checks after release changes.",
+      "also_defined_in_core_framework_pages": [
+        10,
+        11,
+        12
+      ],
+      "id": 214
+    },
+    {
+      "term": "Residual Force",
+      "slug": "residual-force",
+      "letter": "R",
+      "source_section": "alphabetic_glossary",
+      "page": 67,
+      "source_pages": [
+        67
+      ],
+      "definition": "Unbalanced force remaining after a numerical solution or equilibrium check.",
+      "engineering_relevance": "Large residual forces may indicate convergence problems, modelling errors, or unstable nonlinear behaviour.",
+      "app_solver_relevance": "The app should report residuals as solver health indicators.",
+      "id": 215
+    },
+    {
+      "term": "Restraint",
+      "slug": "restraint",
+      "letter": "R",
+      "source_section": "alphabetic_glossary",
+      "page": 67,
+      "source_pages": [
+        67,
+        68
+      ],
+      "definition": "A support, connection, spring, bearing, guide, brace, or constraint that limits movement.",
+      "engineering_relevance": "Restraints control stability, reactions, deflections, and internal force distribution.",
+      "app_solver_relevance": "The app should classify restraints by direction, stiffness, and force component.",
+      "id": 216
+    },
+    {
+      "term": "Rigid Body Motion",
+      "slug": "rigid-body-motion",
+      "letter": "R",
+      "source_section": "alphabetic_glossary",
+      "page": 68,
+      "source_pages": [
+        68
+      ],
+      "definition": "Movement of an entire structure or part of a structure without deformation.",
+      "engineering_relevance": "Rigid body motion usually indicates inadequate restraint unless it is intentionally allowed in a mechanism.",
+      "app_solver_relevance": "The app should detect rigid body modes and explain which restraint is missing.",
+      "also_defined_in_core_framework_pages": [
+        14
+      ],
+      "id": 217
+    },
+    {
+      "term": "Rigid Joint",
+      "slug": "rigid-joint",
+      "letter": "R",
+      "source_section": "alphabetic_glossary",
+      "page": 68,
+      "source_pages": [
+        68
+      ],
+      "definition": "A joint that enforces common movement and rotation among connected members.",
+      "engineering_relevance": "Rigid joints transfer moment and maintain angle compatibility between members.",
+      "app_solver_relevance": "The app should model rigid joints using full displacement and rotation compatibility.",
+      "id": 218
+    },
+    {
+      "term": "Rigid Link",
+      "slug": "rigid-link",
+      "letter": "R",
+      "source_section": "alphabetic_glossary",
+      "page": 68,
+      "source_pages": [
+        68
+      ],
+      "definition": "A modelling element that transfers motion between nodes while assuming negligible deformation.",
+      "engineering_relevance": "Rigid links are useful for offsets, eccentric joints, diaphragm constraints, and connection arms.",
+      "app_solver_relevance": "The app should include rigid links as non-deforming constraint elements.",
+      "id": 219
+    },
+    {
+      "term": "Rocker Bearing",
+      "slug": "rocker-bearing",
+      "letter": "R",
+      "source_section": "alphabetic_glossary",
+      "page": 68,
+      "source_pages": [
+        68
+      ],
+      "definition": "A bearing that allows rotation through rocking action while transferring vertical load.",
+      "engineering_relevance": "Rocker bearings were historically used in bridges and may be sensitive to corrosion, instability, and misalignment.",
+      "app_solver_relevance": "The app should classify rocker bearings as rotation-permitting support devices.",
+      "id": 220
+    },
+    {
+      "term": "Rocking System",
+      "slug": "rocking-system",
+      "letter": "R",
+      "source_section": "alphabetic_glossary",
+      "page": 68,
+      "source_pages": [
+        68
+      ],
+      "definition": "A structural system that allows controlled uplift and rotation at its base or contact surface.",
+      "engineering_relevance": "Rocking systems can reduce seismic damage if restoring force and displacement capacity are properly controlled.",
+      "app_solver_relevance": "The app should model rocking through compression-only contact, uplift detection, and restoring force logic.",
+      "id": 221
+    },
+    {
+      "term": "Roller Support",
+      "slug": "roller-support",
+      "letter": "R",
+      "source_section": "alphabetic_glossary",
+      "page": 69,
+      "source_pages": [
+        69
+      ],
+      "definition": "A support that restrains movement normal to its surface while allowing movement parallel to the surface and rotation.",
+      "engineering_relevance": "Roller supports are used in beam idealizations, bridge bearings, expansion supports, and guided movement systems.",
+      "app_solver_relevance": "The app should define roller direction clearly to avoid incorrect reaction orientation.",
+      "id": 222
+    },
+    {
+      "term": "Rotation",
+      "slug": "rotation",
+      "letter": "R",
+      "source_section": "alphabetic_glossary",
+      "page": 69,
+      "source_pages": [
+        69
+      ],
+      "definition": "Angular movement of a member, joint, support, or body.",
+      "engineering_relevance": "Rotation is central to hinges, bearings, semi-rigid joints, rocking systems, and plastic hinges.",
+      "app_solver_relevance": "The app should output rotations in radians and optionally degrees.",
+      "id": 223
+    },
+    {
+      "term": "Rotational Degree of Freedom",
+      "slug": "rotational-degree-of-freedom",
+      "letter": "R",
+      "source_section": "alphabetic_glossary",
+      "page": 69,
+      "source_pages": [
+        69
+      ],
+      "definition": "An independent angular movement variable at a node or joint.",
+      "engineering_relevance": "Rotational degrees of freedom determine whether moments can be transferred or released.",
+      "app_solver_relevance": "The app should track active, restrained, released, and spring-supported rotational DOFs.",
+      "also_defined_in_core_framework_pages": [
+        10
+      ],
+      "id": 224
+    },
+    {
+      "term": "Rotational Spring",
+      "slug": "rotational-spring",
+      "letter": "R",
+      "source_section": "alphabetic_glossary",
+      "page": 69,
+      "source_pages": [
+        69
+      ],
+      "definition": "A spring that resists rotation with a moment proportional to angular displacement.",
+      "engineering_relevance": "Rotational springs represent semi-rigid joints, flexible bases, bearing rotation stiffness, and partial fixity.",
+      "app_solver_relevance": "The app should use M = kθθ for linear rotational spring behaviour.",
+      "id": 225
+    },
+    {
+      "term": "Scissor Mechanism",
+      "slug": "scissor-mechanism",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 70,
+      "source_pages": [
+        70
+      ],
+      "definition": "A deployable mechanism formed by crossing links connected by pins, allowing expansion and contraction.",
+      "engineering_relevance": "Scissor systems are used in lifts, temporary roofs, deployable shelters, kinetic facades, and adjustable platforms.",
+      "app_solver_relevance": "The app should model scissor mechanisms in kinematic mode and locked structural mode.",
+      "id": 226
+    },
+    {
+      "term": "Second-Order Effect",
+      "slug": "second-order-effect",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 70,
+      "source_pages": [
+        70
+      ],
+      "definition": "An additional force or moment caused by structural deformation under load.",
+      "engineering_relevance": "Examples include P∆ effects in frames and Pδ effects in compression members.",
+      "app_solver_relevance": "The app should flag second-order sensitivity in slender, sway, or compression-dominant systems.",
+      "id": 227
+    },
+    {
+      "term": "Secondary Member",
+      "slug": "secondary-member",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 70,
+      "source_pages": [
+        70
+      ],
+      "definition": "A member that supports or stabilizes primary members but is not part of the main load path.",
+      "engineering_relevance": "Secondary members include purlins, bracing, lacing, hangers, cross-members, and minor support elements.",
+      "app_solver_relevance": "The app should distinguish secondary members from primary members in reports and diagrams.",
+      "id": 228
+    },
+    {
+      "term": "Secondary Moment",
+      "slug": "secondary-moment",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 70,
+      "source_pages": [
+        70
+      ],
+      "definition": "A moment generated by eccentricity, deformation, compatibility, support movement, or second-order effects rather than direct applied bending.",
+      "engineering_relevance": "Secondary moments can be important in articulated systems where ideal pin assumptions hide real eccentricity.",
+      "app_solver_relevance": "The app should warn when eccentric joints or support movements may generate secondary moments.",
+      "id": 229
+    },
+    {
+      "term": "Semi-Rigid Joint",
+      "slug": "semi-rigid-joint",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 71,
+      "source_pages": [
+        71
+      ],
+      "definition": "A joint that transfers partial moment and allows finite rotation.",
+      "engineering_relevance": "Semi-rigid joints are more realistic than ideal pinned or ideal fixed assumptions for many bolted, welded, timber, precast, and bearing-based connections.",
+      "app_solver_relevance": "The app should model semi-rigid joints using rotational stiffness or moment-rotation curves.",
+      "id": 230
+    },
+    {
+      "term": "Serviceability",
+      "slug": "serviceability",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 71,
+      "source_pages": [
+        71
+      ],
+      "definition": "The performance of a structure under normal use conditions.",
+      "engineering_relevance": "Serviceability includes deflection, vibration, cracking, drift, movement, rotation, comfort, appearance, and operational limits.",
+      "app_solver_relevance": "The app should separate serviceability warnings from ultimate strength warnings.",
+      "id": 231
+    },
+    {
+      "term": "Settlement",
+      "slug": "settlement",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 71,
+      "source_pages": [
+        71
+      ],
+      "definition": "Vertical or horizontal movement of a support or foundation.",
+      "engineering_relevance": "Settlement can create compatibility forces in indeterminate structures and rotation in articulated systems.",
+      "app_solver_relevance": "The app should allow support settlement as an imposed displacement load case.",
+      "id": 232
+    },
+    {
+      "term": "Shear Force",
+      "slug": "shear-force",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 71,
+      "source_pages": [
+        71
+      ],
+      "definition": "Internal transverse force acting across a member section.",
+      "engineering_relevance": "Shear force is important in beams, frames, pins, gusset plates, bearings, short members, and support regions.",
+      "app_solver_relevance": "The app should output shear force diagrams and shear reaction tables.",
+      "also_defined_in_core_framework_pages": [
+        13
+      ],
+      "id": 233
+    },
+    {
+      "term": "Shear Key",
+      "slug": "shear-key",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 71,
+      "source_pages": [
+        71
+      ],
+      "definition": "A structural feature used to transfer or resist lateral shear movement.",
+      "engineering_relevance": "Shear keys are used in bridge bearings, foundations, retaining structures, precast joints, and seismic detailing.",
+      "app_solver_relevance": "The app should classify shear keys as lateral restraint components.",
+      "id": 234
+    },
+    {
+      "term": "Shear Release",
+      "slug": "shear-release",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 71,
+      "source_pages": [
+        71
+      ],
+      "definition": "A release that prevents transfer of shear force in a selected direction.",
+      "engineering_relevance": "Shear releases are less common than moment releases and must be used carefully because they may create instability.",
+      "app_solver_relevance": "The app should warn when shear releases break the load path.",
+      "id": 235
+    },
+    {
+      "term": "Singular Stiffness Matrix",
+      "slug": "singular-stiffness-matrix",
+      "letter": "S",
+      "source_section": "core_framework_only",
+      "page": 14,
+      "source_pages": [
+        14,
+        15
+      ],
+      "definition": "A stiffness matrix that cannot be inverted because the system is unstable, under-constrained, or has dependent constraints.",
+      "engineering_relevance": "This often occurs when hinges, rollers, or releases are added CHAPTER 2. ARTICULATED STRUCTURES: CORE FRAMEWORK without enough stabilizing restraint.",
+      "app_solver_relevance": "The app should translate singular matrix errors into understandable engineering warnings. 2.8 Compatibility and Stiffness",
+      "id": 236
+    },
+    {
+      "term": "Slenderness",
+      "slug": "slenderness",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 72,
+      "source_pages": [
+        72
+      ],
+      "definition": "A measure of how long and thin a compression member is relative to its buckling resistance.",
+      "engineering_relevance": "High slenderness increases buckling risk in struts, columns, braces, arch ribs, and compression chords.",
+      "app_solver_relevance": "The app should flag slender compression members for buckling checks.",
+      "id": 237
+    },
+    {
+      "term": "Slider Joint",
+      "slug": "slider-joint",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 72,
+      "source_pages": [
+        72
+      ],
+      "definition": "A joint that permits translation along a specified path while restraining other movements.",
+      "engineering_relevance": "Slider joints occur in guide rails, movable supports, mechanical linkages, and deployable systems.",
+      "app_solver_relevance": "The app should define slider joints using a local guide axis.",
+      "id": 238
+    },
+    {
+      "term": "Sliding Bearing",
+      "slug": "sliding-bearing",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 71,
+      "source_pages": [
+        71,
+        72
+      ],
+      "definition": "A bearing that permits translation along a low-friction surface while transferring vertical load.",
+      "engineering_relevance": "Sliding bearings accommodate thermal expansion, creep, shrinkage, and long-span movement.",
+      "app_solver_relevance": "The app should define sliding direction, friction condition, and movement capacity.",
+      "id": 239
+    },
+    {
+      "term": "Snap-Through",
+      "slug": "snap-through",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 72,
+      "source_pages": [
+        72
+      ],
+      "definition": "A sudden jump from one equilibrium configuration to another.",
+      "engineering_relevance": "Snap-through can occur in shallow arches, shells, deployable structures, bistable systems, and geometrically nonlinear frames.",
+      "app_solver_relevance": "The app should mark snap-through as an advanced nonlinear stability phenomenon.",
+      "id": 240
+    },
+    {
+      "term": "Spherical Bearing",
+      "slug": "spherical-bearing",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 72,
+      "source_pages": [
+        72
+      ],
+      "definition": "A bearing with curved sliding surfaces that permits rotation about multiple axes.",
+      "engineering_relevance": "Spherical bearings are used where large multi-axis rotations and high load capacity are required.",
+      "app_solver_relevance": "The app should include spherical bearing as a 3D rotation-capable support.",
+      "id": 241
+    },
+    {
+      "term": "Spherical Joint",
+      "slug": "spherical-joint",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 72,
+      "source_pages": [
+        72
+      ],
+      "definition": "A joint that allows rotation about multiple axes while restraining selected translations.",
+      "engineering_relevance": "Spherical joints are common in spatial linkages, robotic systems, mechanical supports, and some articulated structural assemblies.",
+      "app_solver_relevance": "The app should model spherical joints with released rotational degrees of freedom and restrained translational degrees of freedom.",
+      "id": 242
+    },
+    {
+      "term": "Spring Support",
+      "slug": "spring-support",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 73,
+      "source_pages": [
+        73
+      ],
+      "definition": "A support that resists displacement or rotation through finite stiffness.",
+      "engineering_relevance": "Spring supports represent soil flexibility, bearing pads, elastomeric supports, flexible bases, and partial restraints.",
+      "app_solver_relevance": "The app should allow translational and rotational spring support input.",
+      "id": 243
+    },
+    {
+      "term": "Stability",
+      "slug": "stability",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 73,
+      "source_pages": [
+        73
+      ],
+      "definition": "The ability of a structure to avoid uncontrolled displacement, rotation, collapse, or mechanism formation.",
+      "engineering_relevance": "Stability depends on geometry, support arrangement, joint restraints, member stiffness, and load path.",
+      "app_solver_relevance": "The app should run stability checks before presenting force and deflection results.",
+      "also_defined_in_core_framework_pages": [
+        14
+      ],
+      "id": 244
+    },
+    {
+      "term": "Static Determinacy",
+      "slug": "static-determinacy",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 73,
+      "source_pages": [
+        73
+      ],
+      "definition": "A condition where all unknown reactions and internal forces can be solved using equilibrium equations alone.",
+      "engineering_relevance": "Determinate structures are easier to analyse but may have less redundancy.",
+      "app_solver_relevance": "The app should classify determinate systems separately from indeterminate and unstable systems.",
+      "also_defined_in_core_framework_pages": [
+        14
+      ],
+      "id": 245
+    },
+    {
+      "term": "Static Indeterminacy",
+      "slug": "static-indeterminacy",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 73,
+      "source_pages": [
+        73
+      ],
+      "definition": "A condition where unknown reactions or internal forces exceed available independent equilibrium equations.",
+      "engineering_relevance": "Indeterminate structures require compatibility, stiffness, or force-method analysis.",
+      "app_solver_relevance": "The app should use indeterminacy classification to select the appropriate solver.",
+      "also_defined_in_core_framework_pages": [
+        14
+      ],
+      "id": 246
+    },
+    {
+      "term": "Stiffness",
+      "slug": "stiffness",
+      "letter": "S",
+      "source_section": "core_framework_only",
+      "page": 15,
+      "source_pages": [
+        15
+      ],
+      "definition": "Resistance to displacement or rotation under applied force or moment.",
+      "engineering_relevance": "Stiffness may be axial EA/L, flexural EI, torsional GJ/L, translational spring stiffness k, or rotational stiffness kθ.",
+      "app_solver_relevance": "The app should allow users to define member stiffness, support stiffness, and joint stiffness. Formula / Relation Axial deformation of a prismatic member: ∆= NL EA where N is axial force, L is member length, E is Young’s modulus, and A is cross-sectional area. Formula / Relation Linear spring reaction: R = k∆ where R is reaction, k is translational stiffness, and ∆is displacement. Formula / Relation Semi-rigid rotational joint: M = kθθ where M is moment, kθ is rotational stiffness, and θ is relative rotation.",
+      "id": 247
+    },
+    {
+      "term": "Stiffness Matrix",
+      "slug": "stiffness-matrix",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 73,
+      "source_pages": [
+        73
+      ],
+      "definition": "A matrix that relates nodal forces to nodal displacements in structural analysis.",
+      "engineering_relevance": "The stiffness matrix is central to computational analysis of beams, frames, trusses, springs, and semi-rigid joints.",
+      "app_solver_relevance": "The app should assemble the global stiffness matrix internally and translate errors into readable warnings.",
+      "id": 248
+    },
+    {
+      "term": "Strut",
+      "slug": "strut",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 73,
+      "source_pages": [
+        73
+      ],
+      "definition": "A member primarily carrying compression.",
+      "engineering_relevance": "Struts are common in trusses, braces, cranes, towers, linkages, and temporary works.",
+      "app_solver_relevance": "The app should classify struts as compression members and check buckling sensitivity.",
+      "id": 249
+    },
+    {
+      "term": "Support Reaction",
+      "slug": "support-reaction",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 74,
+      "source_pages": [
+        74
+      ],
+      "definition": "The force or moment generated at a support due to applied loads, imposed movements, and constraints.",
+      "engineering_relevance": "Support reactions depend on support type, structure geometry, stiffness, and load case.",
+      "app_solver_relevance": "The app should report reactions with correct direction and units.",
+      "id": 250
+    },
+    {
+      "term": "Sway Frame",
+      "slug": "sway-frame",
+      "letter": "S",
+      "source_section": "alphabetic_glossary",
+      "page": 74,
+      "source_pages": [
+        74
+      ],
+      "definition": "A frame that can translate laterally under load because it lacks sufficient lateral restraint.",
+      "engineering_relevance": "Sway frames are more sensitive to second-order effects and stability problems.",
+      "app_solver_relevance": "The app should classify frames as sway or non-sway where relevant.",
+      "id": 251
+    },
+    {
+      "term": "Tangent Stiffness",
+      "slug": "tangent-stiffness",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 77,
+      "source_pages": [
+        77
+      ],
+      "definition": "The instantaneous stiffness of a nonlinear system at a particular load or displacement state.",
+      "engineering_relevance": "Tangent stiffness is important when joint stiffness, cable geometry, contact, material yielding, or large displacement changes during loading.",
+      "app_solver_relevance": "The app can use tangent stiffness in future nonlinear analysis modules.",
+      "id": 252
+    },
+    {
+      "term": "Temporary Works",
+      "slug": "temporary-works",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 77,
+      "source_pages": [
+        77
+      ],
+      "definition": "Temporary structural systems used during construction, lifting, launching, repair, inspection, or staging.",
+      "engineering_relevance": "Temporary works often contain articulated supports, jacks, props, pins, rollers, scaffolds, launching systems, and staged load paths.",
+      "app_solver_relevance": "The app should include temporary works as a special modelling category with construction-stage warnings.",
+      "id": 253
+    },
+    {
+      "term": "Tendon",
+      "slug": "tendon",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 77,
+      "source_pages": [
+        77
+      ],
+      "definition": "A tension element used to apply prestress, restore force, or hold structural components together.",
+      "engineering_relevance": "Tendons are used in prestressed concrete, tied arches, rocking systems, cable-supported systems, and post-tensioned members.",
+      "app_solver_relevance": "The app should allow tendon force as prestress, initial strain, or controlled tension input.",
+      "id": 254
+    },
+    {
+      "term": "Tension Member",
+      "slug": "tension-member",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 77,
+      "source_pages": [
+        75,
+        77
+      ],
+      "definition": "A member primarily carrying axial tension.",
+      "engineering_relevance": "Tension members include ties, hangers, rods, cables, tendons, and some truss members.",
+      "app_solver_relevance": "The app should classify tension members separately from compression members and display tension force clearly.",
+      "duplicate_occurrence_pages": [
+        75,
+        77
+      ],
+      "alternate_entries": [
+        {
+          "page": 75,
+          "source_pages": [
+            75
+          ],
+          "definition": "A member primarily carrying axial tension.",
+          "engineering_relevance": "Tension members include ties, hangers, rods, cables, tendons, and some truss members.",
+          "app_solver_relevance": "The app should classify tension members separately from compression members."
+        }
+      ],
+      "id": 255
+    },
+    {
+      "term": "Tension-Only Member",
+      "slug": "tension-only-member",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 78,
+      "source_pages": [
+        75,
+        78
+      ],
+      "definition": "A member that can resist tensile force but cannot resist compression.",
+      "engineering_relevance": "Cables, hangers, flexible rods, and slack-prone ties are commonly treated as tension-only members.",
+      "app_solver_relevance": "The app should deactivate or flag the member when calculated force becomes compressive.",
+      "duplicate_occurrence_pages": [
+        75,
+        78
+      ],
+      "alternate_entries": [
+        {
+          "page": 75,
+          "source_pages": [
+            75
+          ],
+          "definition": "A member that can resist tension but cannot resist compression.",
+          "engineering_relevance": "Cables, flexible rods, hangers, and slack-prone ties may behave as tension-only members.",
+          "app_solver_relevance": "The app should remove or deactivate the member in compression during nonlinear or tension-only checks."
+        }
+      ],
+      "id": 256
+    },
+    {
+      "term": "Thermal Contraction",
+      "slug": "thermal-contraction",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 78,
+      "source_pages": [
+        78
+      ],
+      "definition": "Decrease in length, area, or volume due to temperature reduction.",
+      "engineering_relevance": "Thermal contraction can open joints, increase bearing movement, change cable force, or create restraint effects.",
+      "app_solver_relevance": "The app should treat contraction as a temperature-change load case with sign-sensitive displacement.",
+      "id": 257
+    },
+    {
+      "term": "Thermal Expansion",
+      "slug": "thermal-expansion",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 78,
+      "source_pages": [
+        75,
+        78
+      ],
+      "definition": "Increase in length, area, or volume due to temperature rise.",
+      "engineering_relevance": "Thermal expansion is critical in bridges, roofs, rails, pipelines, long-span buildings, and bearing-supported structures.",
+      "app_solver_relevance": "The app should allow temperature load cases and compute free or restrained thermal movement.",
+      "duplicate_occurrence_pages": [
+        75,
+        78
+      ],
+      "alternate_entries": [
+        {
+          "page": 75,
+          "source_pages": [
+            75
+          ],
+          "definition": "Increase in length or size due to temperature rise.",
+          "engineering_relevance": "Thermal expansion is important in bridges, roofs, long buildings, pipelines, rails, and bearing-supported structures.",
+          "app_solver_relevance": "The app should allow temperature load cases and expansion-joint movement checks."
+        }
+      ],
+      "id": 258
+    },
+    {
+      "term": "Thermal Lock-In",
+      "slug": "thermal-lock-in",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 78,
+      "source_pages": [
+        75,
+        78
+      ],
+      "definition": "Development of unwanted internal force because a structure is prevented from expanding or contracting freely.",
+      "engineering_relevance": "Thermal lock-in may occur when expansion bearings seize, joints close, or supports are over-constrained.",
+      "app_solver_relevance": "The app should warn when temperature movement is blocked by fixed, guided, or seized restraints.",
+      "duplicate_occurrence_pages": [
+        75,
+        78
+      ],
+      "alternate_entries": [
+        {
+          "page": 75,
+          "source_pages": [
+            75
+          ],
+          "definition": "Development of unwanted internal force because thermal movement is restrained.",
+          "engineering_relevance": "Thermal lock-in can occur when expansion bearings seize or when long structures are over-constrained.",
+          "app_solver_relevance": "The app should warn when thermal movement is restrained by fixed or seized supports."
+        }
+      ],
+      "id": 259
+    },
+    {
+      "term": "Thermal Movement",
+      "slug": "thermal-movement",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 78,
+      "source_pages": [
+        78
+      ],
+      "definition": "Movement caused by expansion or contraction due to temperature change.",
+      "engineering_relevance": "It must be accommodated through bearings, expansion joints, sliding supports, flexible details, or release zones.",
+      "app_solver_relevance": "The app should compare calculated thermal movement with bearing or expansion-joint capacity.",
+      "id": 260
+    },
+    {
+      "term": "Three-Hinged Arch",
+      "slug": "three-hinged-arch",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 78,
+      "source_pages": [
+        75,
+        78
+      ],
+      "definition": "An arch with two support hinges and one internal crown hinge.",
+      "engineering_relevance": "It is generally statically determinate and tolerant of support settlement and temperature effects.",
+      "app_solver_relevance": "The app should include a three-hinged arch template with thrust, hinge force, reaction, and bending outputs.",
+      "duplicate_occurrence_pages": [
+        75,
+        78
+      ],
+      "alternate_entries": [
+        {
+          "page": 75,
+          "source_pages": [
+            75
+          ],
+          "definition": "An arch with hinges at both supports and one internal crown hinge.",
+          "engineering_relevance": "It is usually statically determinate and tolerant of settlement and temperature movement.",
+          "app_solver_relevance": "The app should include a three-hinged arch template with crown hinge force and thrust outputs."
+        }
+      ],
+      "id": 261
+    },
+    {
+      "term": "Three-Hinged Frame",
+      "slug": "three-hinged-frame",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 79,
+      "source_pages": [
+        76,
+        79
+      ],
+      "definition": "A frame with two support hinges and one internal hinge, usually at the ridge, crown, or selected frame location.",
+      "engineering_relevance": "Three-hinged frames reduce restraint moments and are often easier to analyse using equilibrium.",
+      "app_solver_relevance": "The app should include three-hinged frame templates for portals, roofs, and articulated frame systems.",
+      "duplicate_occurrence_pages": [
+        76,
+        79
+      ],
+      "alternate_entries": [
+        {
+          "page": 76,
+          "source_pages": [
+            76
+          ],
+          "definition": "A frame with two support hinges and one internal hinge, commonly at the ridge or crown.",
+          "engineering_relevance": "Three-hinged frames are commonly determinate and reduce moment demand from support settlement.",
+          "app_solver_relevance": "The app should include three-hinged frame templates for portal and roof systems."
+        }
+      ],
+      "id": 262
+    },
+    {
+      "term": "Tie",
+      "slug": "tie",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 79,
+      "source_pages": [
+        76,
+        79
+      ],
+      "definition": "A tension member used to restrain separation, resist thrust, or connect two structural parts.",
+      "engineering_relevance": "Ties are used in tied arches, roof trusses, bracing systems, temporary works, and tensioned assemblies.",
+      "app_solver_relevance": "The app should classify ties as tension-dominant members and report tie force.",
+      "duplicate_occurrence_pages": [
+        76,
+        79
+      ],
+      "alternate_entries": [
+        {
+          "page": 76,
+          "source_pages": [
+            76
+          ],
+          "definition": "A member used to carry tension and restrain separation or thrust.",
+          "engineering_relevance": "Ties are used in tied arches, roof trusses, bracing systems",
+          "app_solver_relevance": ""
+        }
+      ],
+      "id": 263
+    },
+    {
+      "term": "Tied Arch",
+      "slug": "tied-arch",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 79,
+      "source_pages": [
+        79
+      ],
+      "definition": "An arch in which horizontal thrust is resisted by a tie member rather than entirely by foundations.",
+      "engineering_relevance": "Tied arches reduce foundation thrust demand and transfer major force into the tie.",
+      "app_solver_relevance": "The app should compute arch compression, tie tension, hanger force, deck force, and support reactions.",
+      "id": 264
+    },
+    {
+      "term": "Toggle Mechanism",
+      "slug": "toggle-mechanism",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 79,
+      "source_pages": [
+        79
+      ],
+      "definition": "A linkage mechanism that passes through or approaches a near-straight configuration, often producing high mechanical advantage.",
+      "engineering_relevance": "Toggle effects can create very large internal forces near the locked position.",
+      "app_solver_relevance": "The app should warn when a linkage approaches a near-toggle or force-amplifying configuration.",
+      "id": 265
+    },
+    {
+      "term": "Tolerance",
+      "slug": "tolerance",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 79,
+      "source_pages": [
+        79
+      ],
+      "definition": "Permitted variation in geometry, alignment, level, hole position, member length, or installation position.",
+      "engineering_relevance": "Tolerance matters in pin joints, bearings, segmental bridges, steel frames, precast systems, and deployable structures.",
+      "app_solver_relevance": "The app should include tolerance as a reality-check parameter in inspection and constructability mode.",
+      "id": 266
+    },
+    {
+      "term": "Torsion",
+      "slug": "torsion",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 79,
+      "source_pages": [
+        79,
+        80
+      ],
+      "definition": "Twisting moment about a member’s longitudinal axis.",
+      "engineering_relevance": "Torsion occurs in curved members, eccentric connections, bridge decks, off-axis loads, space frames, and 3D articulated systems.",
+      "app_solver_relevance": "The app should support torsional stiffness, torsional release, and torsion result output in 3D mode.",
+      "also_defined_in_core_framework_pages": [
+        13,
+        14
+      ],
+      "id": 267
+    },
+    {
+      "term": "Torsional Release",
+      "slug": "torsional-release",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 80,
+      "source_pages": [
+        80
+      ],
+      "definition": "A release that prevents torsional moment transfer about a selected axis.",
+      "engineering_relevance": "Torsional releases are useful in 3D modelling of bearings, shafts, links, spatial joints, and mechanical articulations.",
+      "app_solver_relevance": "The app should show released torsional degrees of freedom explicitly.",
+      "id": 268
+    },
+    {
+      "term": "Translational Degree of Freedom",
+      "slug": "translational-degree-of-freedom",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 80,
+      "source_pages": [
+        80
+      ],
+      "definition": "An independent linear movement variable at a node, support, joint, or body.",
+      "engineering_relevance": "Translation may occur horizontally, vertically, longitudinally, transversely, or along a guide direction.",
+      "app_solver_relevance": "The app should track free, restrained, spring-supported, imposed, gap-controlled, and compression-only translations.",
+      "also_defined_in_core_framework_pages": [
+        9,
+        10
+      ],
+      "id": 269
+    },
+    {
+      "term": "Translational Spring",
+      "slug": "translational-spring",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 80,
+      "source_pages": [
+        80
+      ],
+      "definition": "A spring that resists linear displacement with force proportional to displacement.",
+      "engineering_relevance": "Translational springs represent soil stiffness, bearing stiffness, elastic supports, guide flexibility, and flexible restraints.",
+      "app_solver_relevance": "The app should model linear translational spring behaviour using R = k∆.",
+      "id": 270
+    },
+    {
+      "term": "Truss",
+      "slug": "truss",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 80,
+      "source_pages": [
+        80
+      ],
+      "definition": "A structural system made of members connected at joints, ideally carrying axial tension or compression.",
+      "engineering_relevance": "Ideal truss analysis assumes loads are applied at joints and members do not transfer bending moment.",
+      "app_solver_relevance": "The app should include truss templates and warn when bending effects invalidate ideal truss assumptions.",
+      "id": 271
+    },
+    {
+      "term": "Truss Panel",
+      "slug": "truss-panel",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 80,
+      "source_pages": [
+        80
+      ],
+      "definition": "The bay or segment between adjacent truss panel points.",
+      "engineering_relevance": "Panel geometry controls web member force, buckling length, deflection, and load distribution.",
+      "app_solver_relevance": "The app should allow panel-based truss generation and panel force reporting.",
+      "id": 272
+    },
+    {
+      "term": "Two-Hinged Arch",
+      "slug": "two-hinged-arch",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 80,
+      "source_pages": [
+        80,
+        81
+      ],
+      "definition": "An arch with hinges at both supports and no crown hinge.",
+      "engineering_relevance": "It is usually statically indeterminate to the first degree because horizontal thrust depends on compatibility.",
+      "app_solver_relevance": "The app should solve two-hinged arches using stiffness or compatibility-based methods.",
+      "id": 273
+    },
+    {
+      "term": "Two-Hinged Frame",
+      "slug": "two-hinged-frame",
+      "letter": "T",
+      "source_section": "alphabetic_glossary",
+      "page": 81,
+      "source_pages": [
+        81
+      ],
+      "definition": "A frame with hinged supports but moment continuity in the main frame members.",
+      "engineering_relevance": "Its determinacy depends on geometry, releases, and member continuity.",
+      "app_solver_relevance": "The app should classify two-hinged frames by support restraints and joint continuity.",
+      "id": 274
+    },
+    {
+      "term": "Ultimate Limit State",
+      "slug": "ultimate-limit-state",
+      "letter": "U",
+      "source_section": "alphabetic_glossary",
+      "page": 82,
+      "source_pages": [
+        82
+      ],
+      "definition": "A safety condition associated with collapse, rupture, instability, overturning, excessive yielding, or loss of equilibrium.",
+      "engineering_relevance": "Ultimate limit states protect against structural failure under extreme or factored loading.",
+      "app_solver_relevance": "The app should separate ultimate warnings from serviceability warnings.",
+      "id": 275
+    },
+    {
+      "term": "Unbalanced Force",
+      "slug": "unbalanced-force",
+      "letter": "U",
+      "source_section": "alphabetic_glossary",
+      "page": 82,
+      "source_pages": [
+        82
+      ],
+      "definition": "A force remaining after equilibrium has not been fully satisfied.",
+      "engineering_relevance": "Unbalanced force may indicate solver convergence problems, missing restraints, numerical instability, or incorrect load application.",
+      "app_solver_relevance": "The app should report unbalanced force as a solver health warning.",
+      "id": 276
+    },
+    {
+      "term": "Under-Constrained System",
+      "slug": "under-constrained-system",
+      "letter": "U",
+      "source_section": "alphabetic_glossary",
+      "page": 82,
+      "source_pages": [
+        82
+      ],
+      "definition": "A system with insufficient restraints to prevent rigid body motion or mechanism formation.",
+      "engineering_relevance": "Under-constrained systems often produce singular stiffness matrices and unrealistic displacements.",
+      "app_solver_relevance": "The app should identify likely missing restraints and suggest correction points.",
+      "id": 277
+    },
+    {
+      "term": "Unintended Fixity",
+      "slug": "unintended-fixity",
+      "letter": "U",
+      "source_section": "alphabetic_glossary",
+      "page": 82,
+      "source_pages": [
+        82
+      ],
+      "definition": "A condition where a joint or support intended to rotate or slide freely behaves as partially or fully fixed.",
+      "engineering_relevance": "Unintended fixity may arise from corrosion, debris, friction, construction error, locked bearings, or rigid secondary components.",
+      "app_solver_relevance": "The app should include unintended fixity as a reality-check and inspection warning.",
+      "id": 278
+    },
+    {
+      "term": "Unintended Release",
+      "slug": "unintended-release",
+      "letter": "U",
+      "source_section": "alphabetic_glossary",
+      "page": 83,
+      "source_pages": [
+        83
+      ],
+      "definition": "A condition where a joint intended to transfer force or moment loses stiffness, continuity, or restraint.",
+      "engineering_relevance": "Unintended release may occur due to cracking, bolt slip, weld failure, pin wear, bearing damage, or deterioration.",
+      "app_solver_relevance": "The app should include unintended release as a defect and diagnostic warning.",
+      "id": 279
+    },
+    {
+      "term": "Universal Joint",
+      "slug": "universal-joint",
+      "letter": "U",
+      "source_section": "alphabetic_glossary",
+      "page": 83,
+      "source_pages": [
+        83
+      ],
+      "definition": "A joint that permits rotation between two shafts or members whose axes are not aligned.",
+      "engineering_relevance": "Universal joints are common in mechanical systems and may appear in movable, adaptive, or deployable structural systems.",
+      "app_solver_relevance": "The app can classify universal joints under multi-axis articulated joint types.",
+      "id": 280
+    },
+    {
+      "term": "Unrestrained Length",
+      "slug": "unrestrained-length",
+      "letter": "U",
+      "source_section": "alphabetic_glossary",
+      "page": 83,
+      "source_pages": [
+        83
+      ],
+      "definition": "The length of a member between points of effective lateral, torsional, or rotational restraint.",
+      "engineering_relevance": "Unrestrained length controls buckling, lateral-torsional buckling, and slenderness sensitivity.",
+      "app_solver_relevance": "The app should identify unrestrained lengths for beams, struts, braces, compression chords, and rafters.",
+      "id": 281
+    },
+    {
+      "term": "Uplift",
+      "slug": "uplift",
+      "letter": "U",
+      "source_section": "alphabetic_glossary",
+      "page": 83,
+      "source_pages": [
+        83
+      ],
+      "definition": "Loss of contact or upward movement at a support, bearing, base plate, foundation, or contact surface.",
+      "engineering_relevance": "Uplift occurs in rocking systems, wind-loaded roofs, seismic overturning, bridge bearings, and compression-only supports.",
+      "app_solver_relevance": "The app should detect uplift when a compression-only support reaction becomes tensile.",
+      "id": 282
+    },
+    {
+      "term": "Variable Geometry",
+      "slug": "variable-geometry",
+      "letter": "V",
+      "source_section": "alphabetic_glossary",
+      "page": 84,
+      "source_pages": [
+        84
+      ],
+      "definition": "A structural configuration whose shape can change during deployment, actuation, construction, or service.",
+      "engineering_relevance": "Variable geometry appears in cranes, movable bridges, deployable roofs, scissor structures, folding systems, and adaptive facades.",
+      "app_solver_relevance": "The app should classify variable-geometry systems separately from fixed-geometry structural models.",
+      "id": 283
+    },
+    {
+      "term": "Variable Stiffness",
+      "slug": "variable-stiffness",
+      "letter": "V",
+      "source_section": "alphabetic_glossary",
+      "page": 84,
+      "source_pages": [
+        84
+      ],
+      "definition": "A stiffness condition that changes with load, displacement, damage, temperature, contact state, or control input.",
+      "engineering_relevance": "Variable stiffness appears in nonlinear bearings, adaptive structures, yielding joints, soil supports, cables, and deployable systems.",
+      "app_solver_relevance": "The app can include variable stiffness in advanced nonlinear and adaptive modules.",
+      "id": 284
+    },
+    {
+      "term": "Vector of Nodal Forces",
+      "slug": "vector-of-nodal-forces",
+      "letter": "V",
+      "source_section": "alphabetic_glossary",
+      "page": 84,
+      "source_pages": [
+        84
+      ],
+      "definition": "The assembled force vector applied to the active degrees of freedom of a structural model.",
+      "engineering_relevance": "It is used with the global stiffness matrix to solve for nodal displacements.",
+      "app_solver_relevance": "The app should build this internally from point loads, member loads, equivalent nodal loads, and imposed effects.",
+      "id": 285
+    },
+    {
+      "term": "Vertical Reaction",
+      "slug": "vertical-reaction",
+      "letter": "V",
+      "source_section": "alphabetic_glossary",
+      "page": 84,
+      "source_pages": [
+        84
+      ],
+      "definition": "The vertical component of support force.",
+      "engineering_relevance": "Vertical reactions are fundamental outputs for beams, frames, arches, trusses, bearings, and foundations.",
+      "app_solver_relevance": "The app should report vertical reactions with sign convention and load-case association.",
+      "id": 286
+    },
+    {
+      "term": "Vibration",
+      "slug": "vibration",
+      "letter": "V",
+      "source_section": "alphabetic_glossary",
+      "page": 84,
+      "source_pages": [
+        84,
+        85
+      ],
+      "definition": "Repeated oscillatory motion of a structure, member, joint, cable, or support system.",
+      "engineering_relevance": "Flexible articulated systems, cables, bridges, cranes, roofs, and machinery supports may be vibration-sensitive.",
+      "app_solver_relevance": "The app should flag vibration-sensitive models for future dynamic analysis.",
+      "id": 287
+    },
+    {
+      "term": "Virtual Work",
+      "slug": "virtual-work",
+      "letter": "V",
+      "source_section": "alphabetic_glossary",
+      "page": 85,
+      "source_pages": [
+        85
+      ],
+      "definition": "An energy method used to compute displacement or establish equilibrium through virtual forces or virtual displacements.",
+      "engineering_relevance": "Virtual work is useful for trusses, beams, frames, arches, and articulated systems.",
+      "app_solver_relevance": "The app can use virtual-work explanations in educational mode.",
+      "id": 288
+    },
+    {
+      "term": "Viscous Damper",
+      "slug": "viscous-damper",
+      "letter": "V",
+      "source_section": "alphabetic_glossary",
+      "page": 85,
+      "source_pages": [
+        85
+      ],
+      "definition": "A damping device whose resisting force depends on velocity.",
+      "engineering_relevance": "Viscous dampers are used in seismic protection, vibration control, bridge systems, tall structures, and adaptive systems.",
+      "app_solver_relevance": "The app can include viscous dampers in future dynamic and seismic modules.",
+      "id": 289
+    },
+    {
+      "term": "Wear",
+      "slug": "wear",
+      "letter": "W",
+      "source_section": "alphabetic_glossary",
+      "page": 86,
+      "source_pages": [
+        86
+      ],
+      "definition": "Progressive material loss due to repeated contact, rotation, sliding, abrasion, or vibration.",
+      "engineering_relevance": "Wear is important in pins, hinges, bearings, rollers, sliding plates, guide rails, and moving joints.",
+      "app_solver_relevance": "The app should include wear as an inspection defect category.",
+      "id": 290
+    },
+    {
+      "term": "Web Member",
+      "slug": "web-member",
+      "letter": "W",
+      "source_section": "alphabetic_glossary",
+      "page": 86,
+      "source_pages": [
+        86
+      ],
+      "definition": "A diagonal or vertical member connecting the top and bottom chords of a truss or girder.",
+      "engineering_relevance": "Web members usually carry axial force and help transfer shear through a truss system.",
+      "app_solver_relevance": "The app should classify web members as tension, compression, or zero-force members depending on load case.",
+      "id": 291
+    },
+    {
+      "term": "Wind Load",
+      "slug": "wind-load",
+      "letter": "W",
+      "source_section": "alphabetic_glossary",
+      "page": 86,
+      "source_pages": [
+        86
+      ],
+      "definition": "Load caused by wind pressure, suction, drag, or dynamic wind effects.",
+      "engineering_relevance": "Wind load is important for roofs, towers, facades, bridges, cranes, temporary works, and lightweight articulated systems.",
+      "app_solver_relevance": "The app should include wind load as lateral, uplift, suction, or pressure loading.",
+      "id": 292
+    },
+    {
+      "term": "Work-Energy Method",
+      "slug": "work-energy-method",
+      "letter": "W",
+      "source_section": "alphabetic_glossary",
+      "page": 86,
+      "source_pages": [
+        86
+      ],
+      "definition": "An analysis method based on the relationship between external work and internal strain energy.",
+      "engineering_relevance": "It is useful for displacement estimation, stability concepts, collapse mechanisms, and educational explanation.",
+      "app_solver_relevance": "The app can include work-energy explanation blocks in educational mode.",
+      "id": 293
+    },
+    {
+      "term": "Working Load",
+      "slug": "working-load",
+      "letter": "W",
+      "source_section": "alphabetic_glossary",
+      "page": 86,
+      "source_pages": [
+        86,
+        87
+      ],
+      "definition": "The unfactored service load expected during normal operation or use.",
+      "engineering_relevance": "Working load is used for serviceability checks, deflection review, bearing movement, and operational safety.",
+      "app_solver_relevance": "The app should distinguish working load from factored or ultimate load.",
+      "id": 294
+    },
+    {
+      "term": "X-Bracing",
+      "slug": "x-bracing",
+      "letter": "X",
+      "source_section": "alphabetic_glossary",
+      "page": 88,
+      "source_pages": [
+        88
+      ],
+      "definition": "A bracing arrangement where two diagonal members cross to form an X shape.",
+      "engineering_relevance": "X-bracing improves lateral stability and prevents quadrilateral frame mechanisms.",
+      "app_solver_relevance": "The app should include X-bracing as a predefined bracing template.",
+      "id": 295
+    },
+    {
+      "term": "X-Direction Load",
+      "slug": "x-direction-load",
+      "letter": "X",
+      "source_section": "alphabetic_glossary",
+      "page": 88,
+      "source_pages": [
+        88
+      ],
+      "definition": "A load acting along the global or local X direction.",
+      "engineering_relevance": "X-direction loads may represent wind, seismic force, braking force, crane surge, actuator force, or lateral thrust.",
+      "app_solver_relevance": "The app should allow directional load input in global or local coordinates.",
+      "id": 296
+    },
+    {
+      "term": "X-Direction Restraint",
+      "slug": "x-direction-restraint",
+      "letter": "X",
+      "source_section": "alphabetic_glossary",
+      "page": 88,
+      "source_pages": [
+        88
+      ],
+      "definition": "A restraint that prevents movement along the global or local X direction.",
+      "engineering_relevance": "Directional restraints are essential in 2D and 3D support modelling.",
+      "app_solver_relevance": "The app should show X-direction restraints graphically to avoid incorrect support assumptions.",
+      "id": 297
+    },
+    {
+      "term": "Yield Line",
+      "slug": "yield-line",
+      "letter": "Y",
+      "source_section": "alphabetic_glossary",
+      "page": 89,
+      "source_pages": [
+        89
+      ],
+      "definition": "A line along which plastic rotation concentrates in a slab, plate, or shell.",
+      "engineering_relevance": "Yield-line mechanisms are important in collapse analysis of plates and slabs.",
+      "app_solver_relevance": "The app can include yield-line logic as a future plate and shell extension.",
+      "id": 298
+    },
+    {
+      "term": "Yield Moment",
+      "slug": "yield-moment",
+      "letter": "Y",
+      "source_section": "alphabetic_glossary",
+      "page": 89,
+      "source_pages": [
+        89
+      ],
+      "definition": "The bending moment at which a section first reaches yield stress at its extreme fibre.",
+      "engineering_relevance": "Yield moment marks the transition from elastic bending to inelastic behaviour.",
+      "app_solver_relevance": "The app can include yield moment in future section-capacity and plastic-hinge checks.",
+      "id": 299
+    },
+    {
+      "term": "Yielding",
+      "slug": "yielding",
+      "letter": "Y",
+      "source_section": "alphabetic_glossary",
+      "page": 89,
+      "source_pages": [
+        89
+      ],
+      "definition": "Material behaviour where deformation continues beyond the elastic range and permanent strain develops.",
+      "engineering_relevance": "Yielding can produce plastic hinges, energy dissipation, redistribution, and collapse mechanisms.",
+      "app_solver_relevance": "The app can include yielding in advanced nonlinear and plasticanalysis modules.",
+      "id": 300
+    },
+    {
+      "term": "Zero Moment Point",
+      "slug": "zero-moment-point",
+      "letter": "Z",
+      "source_section": "alphabetic_glossary",
+      "page": 90,
+      "source_pages": [
+        90
+      ],
+      "definition": "A location where bending moment is zero.",
+      "engineering_relevance": "Hinges are ideal zero-moment points, but zero moment can also occur naturally within a span due to loading and continuity.",
+      "app_solver_relevance": "The app should mark zero-moment locations on bending moment diagrams.",
+      "id": 301
+    },
+    {
+      "term": "Zero-Displacement Boundary",
+      "slug": "zero-displacement-boundary",
+      "letter": "Z",
+      "source_section": "alphabetic_glossary",
+      "page": 90,
+      "source_pages": [
+        90
+      ],
+      "definition": "A boundary condition where displacement in a selected direction is fixed to zero.",
+      "engineering_relevance": "Zero-displacement boundaries represent supports, restraints, symmetry planes, or fixed movement directions.",
+      "app_solver_relevance": "The app should assign zero-displacement conditions through support and restraint definitions.",
+      "id": 302
+    },
+    {
+      "term": "Zero-Energy Mode",
+      "slug": "zero-energy-mode",
+      "letter": "Z",
+      "source_section": "alphabetic_glossary",
+      "page": 90,
+      "source_pages": [
+        90
+      ],
+      "definition": "A deformation mode that occurs without strain energy because the model lacks sufficient stiffness or restraint.",
+      "engineering_relevance": "Zero-energy modes indicate mechanisms, missing constraints, poor element formulation, or unstable release patterns.",
+      "app_solver_relevance": "The app should detect zero-energy modes and explain likely modelling causes.",
+      "id": 303
+    },
+    {
+      "term": "Zero-Force Member",
+      "slug": "zero-force-member",
+      "letter": "Z",
+      "source_section": "alphabetic_glossary",
+      "page": 90,
+      "source_pages": [
+        90
+      ],
+      "definition": "A truss member that carries no axial force under a particular load case.",
+      "engineering_relevance": "Zero-force members may still be useful for stability, construction, alternate load cases, or bracing.",
+      "app_solver_relevance": "The app should identify zero-force members but avoid automatically deleting them from the model.",
+      "id": 304
+    },
+    {
+      "term": "Zone of Articulation",
+      "slug": "zone-of-articulation",
+      "letter": "Z",
+      "source_section": "alphabetic_glossary",
+      "page": 90,
+      "source_pages": [
+        90,
+        91
+      ],
+      "definition": "A local region where movement, rotation, sliding, or force release is intentionally concentrated.",
+      "engineering_relevance": "Zones of articulation include hinges, bearings, expansion joints, sliding seats, rocker supports, and mechanical linkages.",
+      "app_solver_relevance": "The app should mark articulation zones clearly in diagrams and reports.",
+      "id": 305
+    }
+  ]
+}
