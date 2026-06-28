@@ -1,0 +1,7 @@
+[
+  {
+    "template_id": "pinned_portal_frame",
+    "name": "Pinned Portal Frame Demo",
+    "description": "Two columns and one beam with pinned base supports and a nodal vertical load."
+  }
+]
